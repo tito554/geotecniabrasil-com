@@ -1,0 +1,1683 @@
+<!doctype html>
+
+<html lang="pt">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Calculadora Capacidade de Carga Terzaghi e Vesic</title>
+
+<meta name="description" content="A capacidade de carga última qu e admissível qadm definem a pressão que uma sapata pode transmitir ao solo sem ruptura por cisalhamento nem produzir recalq">
+
+<meta name="theme-color" content="#0f3a3a">
+
+<link rel="canonical" href="https://geotecniabrasil.com/blog/calculadoras/capacidad-portante-terzaghi-vesic/">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Calculadora Capacidade de Carga Terzaghi e Vesic">
+
+<meta property="og:description" content="Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.">
+
+<meta property="og:url" content="https://geotecniabrasil.com/blog/calculadoras/capacidad-portante-terzaghi-vesic/">
+
+<meta property="og:site_name" content="Geotecnia Brasil">
+
+<meta property="og:image" content="https://geotecniabrasil.com/img/cimentaciones-superficiales-langpt-5.webp">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Calculadora Capacidade de Carga Terzaghi e Vesic">
+
+<meta name="twitter:description" content="Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.">
+
+<meta name="twitter:image" content="https://geotecniabrasil.com/img/cimentaciones-superficiales-langpt-5.webp">
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A2540'/%3E%3Cpath d='M14 44 L24 30 L34 38 L44 22 L50 28' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Geotecnia Brasil Brasil", "description": "Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.", "url": "https://geotecniabrasil.com/", "areaServed": {"@type": "City", "name": "Brasil"}, "address": {"@type": "PostalAddress", "addressLocality": "Brasil", "addressCountry": "Brasil"}, "email": "contato@geotecniabrasil.com", "priceRange": "$$"}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Estudo Geotécnico · Estudo Geotécnico e Sondagem SPT — Brasil", "url": "https://geotecniabrasil.com/", "description": "Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.", "inLanguage": "pt", "datePublished": "2026-05-31", "dateModified": "2026-05-31", "isPartOf": {"@type": "WebSite", "url": "https://geotecniabrasil.com/", "name": "Geotecnia Brasil"}}</script>
+
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://geotecniabrasil.com/#organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/", "logo": "https://geotecniabrasil.com/img/logo.png", "email": "contato@geotecniabrasil.com", "address": {"@type": "PostalAddress", "addressCountry": "Brasil"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 38, "bestRating": 5, "worstRating": 1}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://geotecniabrasil.com/#website", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/", "inLanguage": "pt", "publisher": {"@id": "https://geotecniabrasil.com/#organization"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://geotecniabrasil.com/?s={search_term_string}"}, "query-input": "required name=search_term_string"}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual a profundidade mínima exigida para um estudo geotécnico?", "acceptedAnswer": {"@type": "Answer", "text": "A profundidade deve atingir pelo menos 3 metros abaixo do nível previsto da fundação, ou até encontrar camada resistente, conforme NBR 6484."}}, {"@type": "Question", "name": "Como a sazonalidade das chuvas afeta os parâmetros do solo?", "acceptedAnswer": {"@type": "Answer", "text": "Solos não saturados podem perder resistência com o aumento da umidade. Ensaios de laboratório devem simular as condições críticas de saturação."}}, {"@type": "Question", "name": "O estudo geotécnico é obrigatório para todas as obras?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a NBR 6122 exige investigação geotécnica para qualquer obra de fundação, independentemente do porte."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://geotecniabrasil.com/equipo/ricardo-albuquerque/#person", "name": "Ricardo Albuquerque", "jobTitle": "Engenheiro Geotécnico Sênior", "image": "https://geotecniabrasil.com/img/headshot_intl_geotecniabrasil-com.webp", "worksFor": {"@type": "Organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com"}, "url": "https://geotecniabrasil.com/equipo/ricardo-albuquerque/"}</script>
+
+
+
+<meta name="layout" content="L3">
+
+<link rel="preload" as="image" href="img/cimentaciones-superficiales-langpt-5.webp" fetchpriority="high">
+
+<style>
+
+
+
+:root{
+
+  --primary:#0f3a3a;
+
+  --accent:#10b981;
+
+  --bg:#f7fafa;
+
+  --surface:#fff;
+
+  --text:#1a2122;
+
+  --border:#e2e8e7;
+
+  --muted:#64748b;
+
+  --font-body:'Inter',-apple-system,sans-serif;
+
+  --font-h:'Lora',Georgia,serif;
+
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{font-family:var(--font-body);line-height:1.65;color:var(--text);background:var(--bg)}
+
+a{color:var(--primary);text-decoration:none}
+
+a:hover{text-decoration:underline}
+
+/* Prose links — links dentro del contenido principal SIEMPRE visibles (underline + accent) */
+
+main section.block p a, main section.block li a, .cierre a {
+
+    color: var(--accent);
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+
+    text-underline-offset: 2px;
+
+    font-weight: 500;
+
+}
+
+main section.block p a:hover, main section.block li a:hover, .cierre a:hover {
+
+    text-decoration-thickness: 2px;
+
+    color: var(--primary);
+
+}
+
+.container{max-width:1400px;margin:0 auto;padding:0 24px}
+
+header{background:var(--primary);color:#fff;padding:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+
+header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+
+header .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+
+header .brand-link:hover{text-decoration:none}
+
+header .logo{flex-shrink:0;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
+
+header .brand-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;line-height:1.1}
+
+header .brand-name{font-family:var(--font-h);font-size:1.18rem;font-weight:700;letter-spacing:.02em;color:#fff}
+
+header .brand-sep{color:#64748b;font-weight:300}
+
+header .brand-sub{font-size:.78rem;font-weight:400;color:#cbd5e1;letter-spacing:.02em}
+
+@media(max-width:560px){header .brand-sep,header .brand-sub{display:none}}
+
+header .navbar{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+
+header .nav-link{color:#e2e8f0;padding:8px 14px;border-radius:6px;font-size:.92rem;font-weight:500;transition:background .15s,color .15s;text-decoration:none;background:transparent;border:none;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px}
+
+header .nav-link:hover,header .nav-link[aria-expanded="true"]{background:rgba(255,255,255,.1);color:#fff;text-decoration:none}
+
+header .nav-dd{position:relative}
+
+header .dd-arrow{font-size:.7rem;opacity:.8;transition:transform .15s}
+
+header .nav-link[aria-expanded="true"] .dd-arrow{transform:rotate(180deg)}
+
+header .dd-menu{position:absolute;top:calc(100% + 6px);left:0;background:#fff;min-width:240px;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:6px 0;display:none;z-index:1000;border:1px solid rgba(0,0,0,.06)}
+
+header .nav-dd.open .dd-menu{display:block}
+
+header .dd-menu a{display:block;padding:10px 18px;color:#1f2937;font-size:.92rem;text-decoration:none;transition:background .12s}
+
+header .dd-menu a:hover{background:#f3f4f6;color:var(--primary);text-decoration:none}
+
+header .dd-menu a{display:flex!important;align-items:center;justify-content:space-between;gap:14px}
+
+header .hub-badge{display:inline-block;background:color-mix(in srgb, var(--accent) 18%, #fff 82%);color:var(--primary);font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:11px;line-height:1.4}
+
+header .nav-burger{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;padding:6px 12px;border-radius:6px;font-size:1.1rem;cursor:pointer}
+
+@media(max-width:780px){
+
+  header .container{flex-wrap:wrap}
+
+  header .nav-burger{display:inline-block}
+
+  header .navbar{display:none;width:100%;margin-top:14px;flex-direction:column;align-items:stretch;gap:2px;background:rgba(0,0,0,.15);padding:10px;border-radius:8px}
+
+  body.nav-open header .navbar{display:flex}
+
+  header .nav-dd{width:100%}
+
+  header .dd-menu{position:static;box-shadow:none;background:rgba(255,255,255,.04);border:none;padding:0;margin-top:4px}
+
+  header .dd-menu a{color:#e2e8f0;padding:8px 18px}
+
+  header .dd-menu a:hover{background:rgba(255,255,255,.08);color:#fff}
+
+}
+
+.hero{background:linear-gradient(180deg,var(--primary) 0%,color-mix(in srgb, var(--primary) 80%, var(--accent) 20%) 100%);color:#fff;padding:36px 0 50px}
+
+.hero h1{font-family:var(--font-h);font-size:2.1rem;line-height:1.25;font-weight:700;margin-bottom:12px;max-width:1280px}
+
+.hero p.subtitle{font-size:1.05rem;color:#cbd5e1;max-width:1100px;margin-bottom:18px}
+
+.breadcrumb{padding:0 0 14px;font-size:.85rem;color:#cbd5e1;background:transparent;border:none}
+
+.breadcrumb a{color:#93c5fd;text-decoration:none}
+
+.breadcrumb a:hover{color:#fff;text-decoration:underline}
+
+.breadcrumb span{color:#fff;font-weight:500}
+
+.block{background:var(--surface);border-radius:10px;padding:26px 30px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid var(--border);overflow:hidden}
+
+.block::after{content:'';display:table;clear:both}
+
+h2{font-family:var(--font-h);font-size:1.45rem;color:var(--primary);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+
+h3{font-family:var(--font-h);font-size:1.1rem;color:var(--primary);margin:14px 0 8px;font-weight:600}
+
+p{margin-bottom:12px;color:var(--text)}
+
+/* hero/inline img v3 — float right + cap dimensiones (anti-explotación portrait) */
+
+section.block{overflow:auto}
+
+section.block .hero-img-wrap{float:right;max-width:340px;width:340px;max-height:280px;margin:6px 0 16px 24px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10);display:block}
+
+section.block .hero-img-wrap img{max-width:100%;max-height:280px;width:100%;height:280px;object-fit:cover;display:block;border-radius:10px}
+
+.inline-img{float:right;max-width:300px;width:300px;max-height:220px;margin:6px 0 18px 20px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
+
+.inline-img img{max-width:100%;max-height:220px;width:100%;height:220px;object-fit:cover;display:block;border-radius:10px}
+
+section.block h2{clear:both;margin-top:0}
+
+@media (max-width:768px){
+
+  section.block{overflow:visible}
+
+  section.block .hero-img-wrap{float:none;width:100%;max-width:100%;max-height:240px;margin:18px auto}
+
+  section.block .hero-img-wrap img{height:240px;max-height:240px}
+
+  .inline-img{float:none;width:100%;max-width:100%;max-height:220px;margin:18px auto}
+
+}
+
+main img:not([class]){max-width:100%;height:auto}
+
+@media(max-width:680px){.inline-img{float:none;width:100%;max-width:100%;margin:18px auto}}
+
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem;border-radius:6px;overflow:hidden}
+
+table th{background:var(--primary);color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+
+table td{padding:10px 14px;border-bottom:1px solid var(--border)}
+
+table tr:nth-child(even) td{background:color-mix(in srgb, var(--bg) 50%, #f8fafc 50%)}
+
+.norm-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+
+.norm-list li{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);color:var(--primary);padding:8px 14px;border-radius:6px;border-left:3px solid var(--primary);font-family:ui-monospace,monospace;font-size:.92rem}
+
+.faq details{background:color-mix(in srgb, var(--bg) 60%, #f8fafc 40%);padding:14px 18px;margin-bottom:8px;border-radius:8px;border-left:3px solid var(--primary)}
+
+.faq summary{font-weight:600;cursor:pointer;color:var(--primary);font-size:1.02rem;list-style:none}
+
+.faq summary::-webkit-details-marker{display:none}
+
+.faq summary::after{content:'+';float:right;font-size:1.4rem;line-height:1;color:var(--muted)}
+
+.faq details[open] summary::after{content:'−'}
+
+.faq details[open] p{margin-top:12px;color:var(--text)}
+
+#mapa-ciudad{height:340px;border-radius:8px;border:1px solid var(--border);z-index:1}
+
+.sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;font-weight:600}
+
+.sidebar ul{list-style:none}
+
+.sidebar li{margin-bottom:6px}
+
+.sidebar a{color:var(--primary);font-size:.93rem;display:block;padding:8px 10px;border-radius:5px;transition:background .12s}
+
+.sidebar a:hover{background:color-mix(in srgb, var(--accent) 10%, #fff 90%);text-decoration:none}
+
+.cierre{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);padding:20px 26px;border-radius:8px;border-left:4px solid var(--primary);margin-top:24px;color:var(--text);font-style:italic}
+
+.author-byline{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--primary);padding:14px 18px;border-radius:8px;display:flex;align-items:center;gap:14px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+
+.author-byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--border)}
+
+.author-byline .author-info{flex:1;min-width:0}
+
+.author-byline .author-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
+.author-byline .author-name{font-size:1rem;font-weight:700;color:var(--primary);display:block;text-decoration:none;line-height:1.3}
+
+.author-byline .author-title{font-size:.82rem;color:var(--muted);margin-top:2px}
+
+.author-byline .author-date{font-size:.72rem;color:var(--muted);text-align:right;line-height:1.5;flex-shrink:0}
+
+@media(max-width:560px){.author-byline{flex-wrap:wrap}.author-byline .author-date{text-align:left;width:100%;margin-top:8px;border-top:1px solid var(--border);padding-top:8px}}
+
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+
+.service-card{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;background:var(--bg);border-radius:8px;border:1px solid var(--border);text-decoration:none;color:var(--primary);transition:transform .15s,box-shadow .15s,border-color .15s}
+
+.service-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08);border-color:var(--accent);text-decoration:none}
+
+.service-card .card-title{font-weight:600;font-size:1.02rem}
+
+.service-card .card-arrow{font-size:1.3rem;color:var(--accent)}
+
+.sat-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+
+.sat-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 7%, #fff 93%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s}
+
+.sat-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+
+.sat-to-hub{display:flex;align-items:center;justify-content:space-between;gap:14px;background:color-mix(in srgb, var(--primary) 6%, #fff 94%);border-left:4px solid var(--primary);padding:14px 22px;border-radius:6px;margin:0 0 22px;font-size:.95rem;flex-wrap:wrap}
+
+.sat-to-hub-label{color:var(--text)}
+
+.sat-to-hub-link{color:var(--primary);font-weight:600;text-decoration:none;white-space:nowrap}
+
+.sat-to-hub-link:hover{text-decoration:underline}
+
+.cta-block,section.block.cta-block{background:linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 70%, var(--accent) 30%) 100%)!important;color:#fff!important;border:none!important;padding:36px 40px!important;text-align:center!important;border-radius:12px!important;box-shadow:0 4px 18px rgba(0,0,0,.12)!important;margin:32px auto!important;border-top:none!important;max-width:760px!important}
+
+.cta-block .cta-inner{margin:0 auto;max-width:600px;text-align:center}
+
+@media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
+
+.cta-block h2,section.block.cta-block h2{color:#fff!important;border-bottom:none!important;padding-bottom:0!important;font-size:1.55rem!important;margin-bottom:10px!important;text-shadow:0 1px 2px rgba(0,0,0,.15)!important}
+
+.cta-block h2::after,section.block.cta-block h2::after{display:none!important;content:none!important}
+
+.cta-block p,section.block.cta-block p{color:#e2e8f0!important;margin-bottom:18px!important;font-size:1rem!important;max-width:none!important}
+
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+
+.cta-wa,.cta-email{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .12s,box-shadow .12s}
+
+.cta-wa{background:#25d366;color:#fff}
+
+.cta-wa:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,.4);text-decoration:none}
+
+.cta-email{background:#fff;color:var(--primary)}
+
+.cta-email:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.2);text-decoration:none}
+
+.cta-email-note{font-size:.85rem;color:#cbd5e1;margin-top:8px;margin-bottom:0}
+
+.cta-email-note a{color:#93c5fd}
+
+.cta-email-note a:hover{color:#fff}
+
+/* Cities chips (S4) — internal linking bottom-of-page */
+
+.city-chips-section{margin:30px auto 24px;max-width:1200px}
+
+.city-chips-section > h2{font-family:var(--font-h);font-size:1.35rem;color:var(--primary);margin-bottom:18px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+
+.city-chips-zone{margin-bottom:18px}
+
+.city-chips-zone:last-child{margin-bottom:0}
+
+.city-chips-zone-title{font-family:var(--font-h);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px;font-weight:700;border:none;padding:0}
+
+.city-chips-row{display:flex;flex-wrap:wrap;gap:8px}
+
+.city-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 6%, #fff 94%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s,box-shadow .12s;font-weight:500;line-height:1.2;white-space:nowrap}
+
+.city-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);color:var(--primary);text-decoration:none;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.06)}
+
+@media(max-width:560px){.city-chip{font-size:.85rem;padding:6px 12px}}
+
+footer{background:var(--primary);color:#cbd5e1;padding:36px 0;margin-top:50px}
+
+footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;align-items:start}
+
+footer h4{color:#fff;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+
+footer p,footer a{color:#cbd5e1;font-size:.88rem;line-height:1.7}
+
+footer a:hover{color:#fff}
+
+footer .copyr{grid-column:1/-1;border-top:1px solid color-mix(in srgb, var(--primary) 60%, #fff 40%);padding-top:18px;text-align:center;color:#94a3b8;font-size:.82rem}
+
+footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;font-style:italic}
+
+
+
+
+
+.mag-layout{padding:42px 24px;max-width:1320px;margin:0 auto}
+
+.mag-layout main{min-width:0}
+
+.mag-layout h1{font-size:2.8rem!important;line-height:1.15;letter-spacing:-.02em;font-weight:800}
+
+.mag-layout .block{padding:30px 40px;background:transparent;border:none;border-top:1px solid var(--border);border-radius:0;box-shadow:none;margin-bottom:0}
+
+.mag-layout .block:first-child{border-top:none}
+
+.mag-layout h2{font-size:1.6rem;border-bottom:none;padding-bottom:0}
+
+.mag-layout p:first-of-type{font-size:1.08rem;line-height:1.7;color:var(--text)}
+
+/* drop-cap REMOVIDO 2026-05-27 (user feedback) — afectaba a todos los párrafos de cards/bloques */
+
+
+
+</style>
+
+
+
+<link rel="stylesheet" href="/calc-scoped.css">
+
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><style id="selfhost-fonts">body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style></head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<a class="brand-link" href="/">
+
+<svg class="logo" width="38" height="38" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+  <defs>
+
+    <linearGradient id="lg656" x1="0" y1="0" x2="1" y2="1">
+
+      <stop offset="0%" stop-color="var(--accent)"/>
+
+      <stop offset="100%" stop-color="var(--primary)"/>
+
+    </linearGradient>
+
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#lg656)"/>
+
+  <path d="M14 44 L24 30 L34 38 L44 22 L50 28" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="24" cy="30" r="3" fill="#fff"/>
+
+  <circle cx="34" cy="38" r="3" fill="#fff"/>
+
+  <circle cx="44" cy="22" r="3" fill="#fff"/>
+
+</svg>
+
+<div class="brand-line">
+
+  <span class="brand-name">Geotecnia Brasil</span>
+
+  <span class="brand-sep">·</span>
+
+  <span class="brand-sub">Engenharia Geotécnica</span>
+
+</div>
+
+</a>
+
+<nav class="navbar" aria-label="principal">
+
+<a href="/" class="nav-link">Início</a><a class="nav-link" href="/calculadoras/">Calculadoras</a>
+
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Serviços<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/sondagem-spt/" role="menuitem">Sondagem SPT</a><a href="/laboratorio-mecanica-solos/" role="menuitem">Laboratório de Mecânica dos Solos</a><a href="/estabilidade-taludes/" role="menuitem">Estabilidade de Taludes</a><a href="/projeto-muros-contencao/" role="menuitem">Projeto de Muros de Contenção</a></div></div>
+
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Cobertura<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/estudo-geotecnico-em-sao-paulo/" role="menuitem" class="hub-main"><strong>Sao Paulo</strong></a><a href="/estudo-geotecnico-em-rio-de-janeiro/" role="menuitem" class="hub-main"><strong>Rio De Janeiro</strong></a><a href="/estudo-geotecnico-em-brasilia/" role="menuitem" class="hub-main"><strong>Brasilia</strong></a><a href="/estudo-geotecnico-em-salvador/" role="menuitem" class="hub-main"><strong>Salvador</strong></a><a href="/estudo-geotecnico-em-fortaleza/" role="menuitem" class="hub-main"><strong>Fortaleza</strong></a><a href="/estudo-geotecnico-em-belo-horizonte/" role="menuitem" class="hub-main"><strong>Belo Horizonte</strong></a><a href="/estudo-geotecnico-em-manaus/" role="menuitem" class="hub-main"><strong>Manaus</strong></a><a href="/estudo-geotecnico-em-curitiba/" role="menuitem" class="hub-main"><strong>Curitiba</strong></a><a href="/estudo-geotecnico-em-recife/" role="menuitem" class="hub-main"><strong>Recife</strong></a><a href="/estudo-geotecnico-em-porto-alegre/" role="menuitem" class="hub-main"><strong>Porto Alegre</strong></a></div></div>
+
+<a href="/equipo/ricardo-albuquerque/" class="nav-link">Equipe</a>
+
+</nav>
+
+<button class="nav-burger" aria-label="menú" onclick="document.body.classList.toggle('nav-open')">☰</button>
+
+</div>
+
+</header>
+
+<main>
+
+<nav aria-label="breadcrumb" style="max-width:900px;margin:1.4rem auto 0;padding:0 1.5rem;font-size:.85rem;color:#64748b"><a href="/" style="color:inherit;text-decoration:none">Início</a> &rsaquo; <span>Calculadora Capacidade de Carga Terzaghi e Vesic</span></nav>
+
+<article class="calc-scope" style="max-width:900px;margin:0 auto;padding:1.5rem">
+
+<h1>Calculadora Capacidade de Carga Terzaghi e Vesic</h1>
+
+
+
+<p class="lead">A capacidade de carga última qu e admissível qadm definem a pressão que uma sapata pode transmitir ao solo sem ruptura por cisalhamento nem produzir recalques excessivos. Esta calculadora aplica a fórmula geral de Terzaghi (1943) com extensões de Vesic (1973) e Meyerhof, incorporando fatores de forma, profundidade e inclinação de carga. Compatível com os critérios de projeto da ABNT NBR 6122 e a prática usual em edificações.</p>
+
+
+
+<h2>O que é e quando se aplica?</h2>
+
+<p>A capacidade de carga se aplica a sapatas rasas (isoladas, corridas, associadas) e, com adaptações, a radiers. Define a carga máxima por unidade de área antes da ruptura por cisalhamento generalizado do solo. Na prática, divide-se qu por um fator de segurança (tipicamente 3,0 estático e 2,0 sísmico conforme ABNT NBR 6122) para obter qadm. O cálculo é sensível a c, φ, γ, profundidade de embutimento, geometria e presença de lençol freático.</p>
+
+
+
+<h2>Fórmulas aplicadas</h2>
+
+<div class="formulas">
+
+<p><strong>Terzaghi (sapata corrida, solo ideal):</strong></p>
+
+<p>qu = c·Nc + q·Nq + 0,5·γ·B·Nγ</p>
+
+<p><strong>Vesic generalizada:</strong> qu = c·Nc·sc·dc·ic + q·Nq·sq·dq·iq + 0,5·γ·B·Nγ·sγ·dγ·iγ</p>
+
+<p><strong>Fatores de capacidade (Vesic):</strong></p>
+
+<p>Nq = e^(π·tan φ) · tan²(45 + φ/2)</p>
+
+<p>Nc = (Nq − 1) / tan φ  (ou 5,14 se φ = 0)</p>
+
+<p>Nγ = 2 · (Nq + 1) · tan φ</p>
+
+<p><strong>Fatores de forma (Vesic):</strong> sc = 1 + (B/L)(Nq/Nc), sq = 1 + (B/L) tan φ, sγ = 1 − 0,4 (B/L)</p>
+
+<p><strong>Fatores de profundidade:</strong> dq = 1 + 2 tan φ (1 − sin φ)² · (Df/B); dc = dq − (1 − dq)/(Nc tan φ); dγ = 1.</p>
+
+<p><strong>Capacidade admissível:</strong> qadm = (qu − γ·Df) / FS + γ·Df (carga líquida admissível)</p>
+
+</div>
+
+
+
+<div class="calc-split-layout">
+
+<section class="calc-widget" aria-label="Calculadora interativa de capacidade de carga Terzaghi/Vesic">
+
+<h2>Calcular online</h2>
+
+<p class="calc-intro">Insira a geometria e os parâmetros do solo para obter qult e qadm. <strong>O fator de segurança é ajustado automaticamente</strong> conforme a norma do país que você selecionar à direita.</p>
+
+<form id="calc-form" novalidate>
+
+
+
+<div class="calc-section">
+
+  <h3 class="calc-section-title">Geometria da fundação</h3>
+
+  <div class="calc-row">
+
+    <label>B — Largura <span class="calc-unit">(m)</span><input type="number" id="B" step="0.1" value="2.0" min="0.1" max="20" required></label>
+
+    <label>L — Comprimento <span class="calc-unit">(m)</span><input type="number" id="L" step="0.1" value="2.0" min="0.1" max="50" required>
+
+      <span class="calc-hint">Corrida ou quadrada: usar B = L</span></label>
+
+    <label>D<sub>f</sub> — Profundidade <span class="calc-unit">(m)</span><input type="number" id="Df" step="0.1" value="1.5" min="0" max="20" required></label>
+
+    <label>Tipo de sapata<select id="tipo">
+
+      <option value="corrida">Corrida (L ≫ B)</option>
+
+      <option value="cuadrada" selected>Quadrada (B = L)</option>
+
+      <option value="rectangular">Retangular (B / L)</option>
+
+      <option value="circular">Circular (B = Ø)</option>
+
+    </select></label>
+
+  </div>
+
+</div>
+
+
+
+<div class="calc-section">
+
+  <h3 class="calc-section-title">Solo e nível freático</h3>
+
+  <div class="calc-row">
+
+    <label>γ — Peso específico <span class="calc-unit">(kN/m³)</span><input type="number" id="gamma" step="0.5" value="18" min="10" max="25" required></label>
+
+    <label>γ<sub>sat</sub> — Saturado <span class="calc-unit">(kN/m³)</span><input type="number" id="gsat" step="0.5" value="19" min="10" max="26">
+
+      <span class="calc-hint">Padrão = γ + 1</span></label>
+
+    <label>D<sub>w</sub> — Nível freático <span class="calc-unit">(m)</span><input type="number" id="Dw" step="0.1" value="" min="0" max="30" placeholder="vazio = sem lençol">
+
+      <span class="calc-hint">A partir da superfície. Vazio se não houver lençol</span></label>
+
+  </div>
+
+</div>
+
+
+
+<div class="calc-section">
+
+  <h3 class="calc-section-title">Resistência ao cisalhamento</h3>
+
+  <div class="calc-row">
+
+    <label>c — Coesão <span class="calc-unit">(kPa)</span><input type="number" id="c" step="1" value="10" min="0" max="500" required></label>
+
+    <label>φ — Ângulo de atrito <span class="calc-unit">(°)</span><input type="number" id="phi" step="1" value="30" min="0" max="45" required></label>
+
+  </div>
+
+</div>
+
+
+
+<div class="calc-section">
+
+  <h3 class="calc-section-title">Combinação de carga</h3>
+
+  <div class="calc-row">
+
+    <label>Combinação<select id="combinacion">
+
+      <option value="estatico">Estática</option>
+
+      <option value="sismico">Sísmica</option>
+
+      <option value="dinamico">Cíclica (não-sismo)</option>
+
+    </select></label>
+
+    <label id="lbl-V" style="display:none">V — Carga vertical <span class="calc-unit">(kPa)</span><input type="number" id="V" step="10" value="200" min="10" max="2000">
+
+      <span class="calc-hint">Pressão nominal aplicada pela estrutura</span></label>
+
+  </div>
+
+</div>
+
+
+
+<div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.5rem">
+
+  <button type="submit">Calcular q<sub>ult</sub> / q<sub>adm</sub></button>
+
+  <button type="button" id="btn-comparar" style="background:#0f2747">📊 Comparar 4 países</button>
+
+</div>
+
+</form>
+
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+
+<p class="calc-note" id="calc-note-fs">Fatores de Vesic. FS conforme norma do país escolhido (painel direito).</p>
+
+</section>
+
+
+
+<aside class="visor-normas-aside" aria-label="Marco normativo aplicável">
+
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 Ver marco normativo</button>
+
+<div id="visor-normas" class="visor-normas-panel"></div>
+
+</aside>
+
+</div>
+
+<style>
+
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1rem}
+
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+
+.calc-widget button:hover{background:#115e59}
+
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+
+.calc-widget #calc-resultado:empty{display:none}
+
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+
+.calc-widget .calc-hint{font-size:.7rem;color:#94a3b8;font-weight:400;font-style:italic;margin-left:.3rem}
+
+.calc-widget .calc-warning{margin-top:.6rem;padding:.55rem .7rem;background:#fef3c7;border-left:3px solid #d97706;border-radius:4px;color:#78350f;font-size:.82rem}
+
+.calc-widget .sismo-badge{margin-top:.6rem;padding:.5rem .7rem;background:#dbeafe;border-left:3px solid #2563eb;border-radius:4px;color:#1e40af;font-size:.82rem;font-weight:600}
+
+.calc-widget input:disabled,.calc-widget select:disabled{background:#f1f5f9;color:#94a3b8;cursor:not-allowed}
+
+.calc-widget #calc-resultado .info-line{display:block;margin-top:.25rem;color:#0f766e;font-size:.85em;font-weight:600}
+
+.calc-widget #calc-resultado .factors-line{display:block;margin-top:.25rem;color:#64748b;font-size:.78em;font-family:ui-monospace,monospace}
+
+.calc-widget #btn-comparar{background:#0f2747}
+
+.calc-widget #btn-comparar:hover{background:#1e3a5f}
+
+
+
+/* Modal comparador */
+
+.cmp-overlay{position:fixed;inset:0;background:rgba(15,23,42,.7);z-index:9998;display:none;align-items:flex-start;justify-content:center;padding:2vh 1rem;overflow-y:auto}
+
+.cmp-overlay.cmp-open{display:flex}
+
+.cmp-modal{background:#fff;max-width:1100px;width:100%;border-radius:12px;padding:1.5rem;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+
+.cmp-modal h3{margin:0 0 1rem;color:#0f2747;font-size:1.2rem}
+
+.cmp-modal-close{float:right;background:none;border:0;font-size:1.5rem;color:#64748b;cursor:pointer;line-height:1;padding:0 .5rem}
+
+.cmp-table{width:100%;border-collapse:collapse;margin-top:1rem;font-size:.88rem}
+
+.cmp-table th,.cmp-table td{border:1px solid #cbd5e1;padding:.55rem .7rem;text-align:left;vertical-align:top}
+
+.cmp-table th{background:#0f2747;color:#fff;font-weight:600}
+
+.cmp-table tbody tr:nth-child(even){background:#f8fafc}
+
+.cmp-table .cmp-qadm{font-weight:700;color:#0f766e;font-size:1.05em;font-variant-numeric:tabular-nums}
+
+.cmp-table .cmp-norma-cita{font-size:.74rem;color:#64748b;font-style:italic;display:block;margin-top:.2rem}
+
+
+
+/* Badges en visor */
+
+.visor-normas-panel .vn-badge{display:inline-block;font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:.08rem .4rem;border-radius:8px;margin-left:.3rem;vertical-align:middle}
+
+.visor-normas-panel .vn-badge-aplicado{background:#0f766e;color:#fff}
+
+.visor-normas-panel .vn-badge-info{background:#cbd5e1;color:#334155}
+
+
+
+/* Split panel CSS movido a calc.css global (avance 30bis: layout en columna) */
+
+@media (max-width:1023px){
+
+  .visor-normas-panel{display:none;margin-top:.6rem;max-height:70vh;overflow-y:auto}
+
+  .visor-normas-panel.vn-mobile-open{display:block}
+
+}
+
+
+
+/* Header del visor */
+
+.visor-normas-panel .vn-header{display:flex;flex-direction:column;gap:.6rem;padding-bottom:.7rem;border-bottom:2px solid #00b5a1;margin-bottom:.85rem}
+
+.visor-normas-panel .vn-title{font-size:.95rem;font-weight:800;color:#0f2747;letter-spacing:.01em}
+
+.visor-normas-panel .vn-pais-selector{display:flex;align-items:center;gap:.5rem;font-size:.8rem;color:#475569}
+
+.visor-normas-panel .vn-pais-selector label{font-weight:600}
+
+.visor-normas-panel .vn-pais-selector select{flex:1;padding:.4rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.85rem;font-family:inherit;background:#fff;color:#0f172a;font-weight:600}
+
+.visor-normas-panel .vn-pais-selector select:focus{outline:2px solid #00b5a1;outline-offset:1px}
+
+
+
+/* Secciones */
+
+.visor-normas-panel .vn-section{margin-bottom:1rem}
+
+.visor-normas-panel .vn-section-title{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#0f766e;margin-bottom:.55rem}
+
+.visor-normas-panel .vn-section-params{background:rgba(255,255,255,.65);border-left:3px solid #0f766e;padding:.6rem .8rem;border-radius:6px}
+
+
+
+/* Parámetros */
+
+.visor-normas-panel .vn-param{margin-bottom:.55rem}
+
+.visor-normas-panel .vn-param:last-child{margin-bottom:0}
+
+.visor-normas-panel .vn-param-key{font-weight:600;color:#334155;text-transform:capitalize}
+
+.visor-normas-panel .vn-param-valor{display:inline-block;background:#0f766e;color:#fff;padding:.05rem .4rem;border-radius:4px;font-weight:700;font-variant-numeric:tabular-nums}
+
+.visor-normas-panel .vn-param-texto{color:#0f172a}
+
+.visor-normas-panel .vn-param-fuente{font-size:.74rem;color:#0f766e;font-weight:600;margin-top:.15rem}
+
+.visor-normas-panel .vn-param-nota{font-size:.74rem;color:#64748b;font-style:italic;margin-top:.1rem}
+
+
+
+/* Normas — cards */
+
+.visor-normas-panel .vn-norma{background:#fff;border:1px solid #cbd5e1;border-radius:8px;padding:.7rem .85rem;margin-bottom:.7rem;font-size:.82rem}
+
+.visor-normas-panel .vn-norma-cabecera{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin-bottom:.3rem}
+
+.visor-normas-panel .vn-norma-codigo{font-weight:800;color:#0f2747;font-size:.95rem}
+
+.visor-normas-panel .vn-norma-anio{color:#64748b;font-weight:600}
+
+.visor-normas-panel .vn-norma-tipo{margin-left:auto;font-size:.65rem;background:#0f2747;color:#fff;padding:.1rem .45rem;border-radius:9px;font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+
+.visor-normas-panel .vn-norma-titulo{font-size:.78rem;color:#475569;margin-bottom:.45rem;font-style:italic}
+
+.visor-normas-panel .vn-articulo{padding:.45rem .55rem;background:#f8fafc;border-left:2px solid #00b5a1;border-radius:4px;margin-bottom:.4rem}
+
+.visor-normas-panel .vn-articulo-ref{font-weight:700;color:#0f2747;font-size:.78rem;margin-bottom:.2rem}
+
+.visor-normas-panel .vn-articulo-cita{color:#334155;font-size:.78rem;line-height:1.45;font-style:italic}
+
+.visor-normas-panel .vn-norma-link{display:inline-block;margin-top:.35rem;font-size:.75rem;color:#0f766e;text-decoration:none;font-weight:600}
+
+.visor-normas-panel .vn-norma-link:hover{text-decoration:underline}
+
+</style>
+
+<script>
+
+/*
+
+ * Calculadora Capacidade de Carga Vesic (1973) — fórmula completa.
+
+ * Implementa: Nc, Nq, Nγ + fatores de forma s + profundidade d + lençol freático.
+
+ * qadm = (qu_líquida) / FS + γ·Df  (carga ADMISSÍVEL LÍQUIDA, ajustada por sobrecarga)
+
+ *
+
+ * O FS e a citação da norma vêm do visor conforme país escolhido.
+
+ */
+
+(function(){
+
+function calcular(){
+
+  var B=parseFloat(document.getElementById('B').value);
+
+  var L=parseFloat(document.getElementById('L').value);
+
+  var Df=parseFloat(document.getElementById('Df').value);
+
+  var Dw=parseFloat(document.getElementById('Dw').value);
+
+  var g=parseFloat(document.getElementById('gamma').value);
+
+  var gsat=parseFloat(document.getElementById('gsat').value);
+
+  var c=parseFloat(document.getElementById('c').value);
+
+  var phi=parseFloat(document.getElementById('phi').value);
+
+  var tipo=document.getElementById('tipo').value;
+
+  var combinacion=document.getElementById('combinacion').value;
+
+  var out=document.getElementById('calc-resultado');
+
+  var note=document.getElementById('calc-note-fs');
+
+
+
+  // Validações físicas
+
+  if(!isFinite(B)||!isFinite(L)||!isFinite(Df)||!isFinite(g)||!isFinite(c)||!isFinite(phi)||B<=0||L<=0||g<=0||c<0||phi<0||Df<0){
+
+    out.innerHTML='<span class="err">Insira valores numéricos positivos em todos os campos obrigatórios.</span>';return null;
+
+  }
+
+  if(L<B){out.innerHTML='<span class="err">L (comprimento) deve ser ≥ B (largura). Se sua sapata é B>L, troque os valores.</span>';return null;}
+
+  if(!isFinite(gsat)||gsat<g){gsat=g+1;}
+
+
+
+  // Tipo de sapata → ajustes de B, L
+
+  if(tipo==='cuadrada'){L=B;}
+
+  if(tipo==='circular'){L=B;}
+
+  if(tipo==='corrida'){L=B*100;}  // L muito grande para forçar B/L≈0
+
+
+
+  // FS do visor
+
+  var paramKey=combinacion==='sismico'?'FS_sismico':(combinacion==='dinamico'?'FS_dinamico':'FS_estatico');
+
+  var FS=3.0,citaFS='—',paisActual='?';
+
+  var khAplicado=0,khCita='';
+
+  if(window.VisorNormas){
+
+    var v=window.VisorNormas.getParam(paramKey);
+
+    if(typeof v==='number'&&v>0){FS=v;}
+
+    citaFS=window.VisorNormas.getNormaCita(paramKey)||'—';
+
+    paisActual=window.VisorNormas.getPais()||'?';
+
+    if(combinacion==='sismico'){
+
+      var khv=window.VisorNormas.getParam('kh_horizontal');
+
+      if(typeof khv==='number'&&khv>0){khAplicado=khv;khCita=window.VisorNormas.getNormaCita('kh_horizontal')||'';}
+
+    }
+
+  }
+
+
+
+  // Fatores Nc Nq Nγ (Vesic)
+
+  var phir=phi*Math.PI/180;
+
+  var Nq,Nc,Ng;
+
+  if(phi===0){Nq=1;Nc=5.14;Ng=0;}
+
+  else{
+
+    Nq=Math.exp(Math.PI*Math.tan(phir))*Math.pow(Math.tan(Math.PI/4+phir/2),2);
+
+    Nc=(Nq-1)/Math.tan(phir);
+
+    Ng=2*(Nq+1)*Math.tan(phir);
+
+  }
+
+
+
+  // Fatores de forma sc, sq, sγ (Vesic)
+
+  var BL=B/L;  // relação adimensional (corrida → ~0)
+
+  var sc,sq,sg;
+
+  if(tipo==='circular'){
+
+    sc=1+(Nq/Nc); sq=1+Math.tan(phir); sg=0.6;
+
+  } else {
+
+    sc=1+BL*(Nq/Nc);
+
+    sq=1+BL*Math.tan(phir);
+
+    sg=Math.max(0.6, 1-0.4*BL);
+
+  }
+
+
+
+  // Fatores de profundidade dq, dc, dγ (Hansen-Vesic)
+
+  // k = Df/B se Df<=B; atan(Df/B) se Df>B
+
+  var k=(Df<=B)? (Df/B) : Math.atan(Df/B);
+
+  var dq=phi===0 ? 1 : 1+2*Math.tan(phir)*Math.pow(1-Math.sin(phir),2)*k;
+
+  var dc=phi===0 ? 1+0.4*k : dq-(1-dq)/(Nc*Math.tan(phir));
+
+  var dg=1;
+
+
+
+  // Lençol freático — ajuste γ do termo 0.5·γ·B·Nγ e q do termo q·Nq
+
+  // Caso 1: Dw>=Df+B → não afeta
+
+  // Caso 2: Df<=Dw<Df+B → γ ponderado na zona de cunha: γ_avg = γ' + (Dw-Df)/B·(γ-γ')
+
+  // Caso 3: Dw<Df → afeta também a sobrecarga q
+
+  // (γ' = γsat - 9.81 ≈ γsat - 10)
+
+  var gamma_w=9.81;
+
+  var gPrime=gsat-gamma_w;
+
+  var gammaTermNg=g; // γ aplicado ao termo 0.5·γ·B·Nγ
+
+  var qSobrecarga=g*Df; // sobrecarga base q = γ·Df
+
+  var notaNapa='';
+
+  if(isFinite(Dw)&&Dw>=0){
+
+    if(Dw>=Df+B){
+
+      notaNapa='Lençol profundo (Dw≥Df+B): não afeta qu.';
+
+    } else if(Dw>=Df){
+
+      // Caso 2: lençol entre Df e Df+B
+
+      var d=(Dw-Df)/B; // 0 a 1
+
+      gammaTermNg=gPrime+d*(g-gPrime);
+
+      notaNapa='Lençol entre Df e Df+B (Dw='+Dw.toFixed(1)+' m): γ ponderado = '+gammaTermNg.toFixed(2)+' kN/m³ no termo Nγ.';
+
+    } else {
+
+      // Caso 3: lençol acima de Df
+
+      gammaTermNg=gPrime;
+
+      qSobrecarga=g*Dw + gPrime*(Df-Dw);
+
+      notaNapa='Lençol sobre o nível da base (Dw='+Dw.toFixed(1)+' m): γ′ em Nγ e q = γ·Dw + γ′·(Df-Dw) = '+qSobrecarga.toFixed(1)+' kPa.';
+
+    }
+
+  }
+
+
+
+  // Fatores de inclinação de carga sísmica (Hansen-Vesic completo)
+
+  // Em sísmica: H = kh·V (carga horizontal induzida por sismo) → reduz qu via fatores i
+
+  // Fix 3: fórmula iq completa com coesão: iq = (1 - H/(V + B'·L'·c·cot φ))^m
+
+  // Fix 2: validar V>0 explícito + aviso se faltar
+
+  var ic=1, iq=1, ig=1, V_in=NaN, H_in=NaN, notaSismo='', warningSismo='';
+
+  if(combinacion==='sismico'){
+
+    V_in=parseFloat(document.getElementById('V').value);
+
+    if(!isFinite(V_in)||V_in<=0){
+
+      warningSismo='⚠ Combinação sísmica selecionada mas V (vertical de serviço) não inserido. Resultado SEM inclinação de carga — pode ser otimista. Insira um V > 0 para aplicar fatores i.';
+
+    } else if(khAplicado>0){
+
+      H_in=khAplicado*V_in;
+
+      // m: expoente Hansen para sapata retangular (carga inclinada em B)
+
+      var m_ratio=B/Math.max(L,B);
+
+      var m=(2+m_ratio)/(1+m_ratio);
+
+      // Fórmula completa com coesão: denom inclui B·L·c·cot(φ)
+
+      var denomBase = V_in + (phi>0 ? B*L*c/Math.tan(phir) : 0);
+
+      var ratio = (denomBase>0) ? Math.max(0, 1 - H_in/denomBase) : Math.max(0, 1 - H_in/Math.max(V_in,1));
+
+      iq = Math.pow(ratio, m);
+
+      ig = Math.pow(ratio, m+1);
+
+      // ic: se φ>0 usar derivação de iq; se φ=0 (solos coesivos puros), fórmula específica de Hansen
+
+      ic = phi>0 ? iq - (1-iq)/(Nc*Math.tan(phir)) : (c>0 ? 1 - (m*H_in)/(B*L*c*Nc) : 1);
+
+      ic = Math.max(0.1, Math.min(1, ic));
+
+      notaSismo='Carga horizontal sísmica: H = kh·V = '+khAplicado.toFixed(2)+' · '+V_in.toFixed(0)+' = '+H_in.toFixed(1)+' kPa. Fatores Hansen: ic='+ic.toFixed(2)+' · iq='+iq.toFixed(2)+' · iγ='+ig.toFixed(2)+'.';
+
+    }
+
+  }
+
+
+
+  // qu (Vesic completo com fatores i)
+
+  var qu_termoC = c*Nc*sc*dc*ic;
+
+  var qu_termoQ = qSobrecarga*Nq*sq*dq*iq;
+
+  var qu_termoG = 0.5*gammaTermNg*B*Ng*sg*dg*ig;
+
+  var qult = qu_termoC + qu_termoQ + qu_termoG;
+
+
+
+  // qadm LÍQUIDA: (qu - q_sobrecarga)/FS + q_sobrecarga
+
+  var qadm = (qult - qSobrecarga)/FS + qSobrecarga;
+
+
+
+  // Avisos físicos
+
+  var warns=[];
+
+  if(phi>40 && c>20) warns.push('φ>40° e c>20 kPa simultaneamente é incomum: granular denso tipicamente tem c≈0.');
+
+  if(Df>3*B) warns.push('Df > 3·B: a sapata já não é considerada rasa. Verificar com cálculo de fundação intermediária/profunda.');
+
+  if(phi===0 && c<5) warns.push('φ=0 e c<5 kPa: solo muito mole, capacidade de carga muito baixa.');
+
+  if(qadm<50) warns.push('qadm < 50 kPa: revisar parâmetros, solo pouco apto para fundação direta.');
+
+
+
+  // Render
+
+  var html='<span class="ok">qult = '+qult.toFixed(1)+' kPa · qadm (líquida) = '+qadm.toFixed(1)+' kPa (FS='+FS.toFixed(2)+')</span>';
+
+  html+='<span class="factors-line">Nc='+Nc.toFixed(2)+' · Nq='+Nq.toFixed(2)+' · Nγ='+Ng.toFixed(2)+
+
+        ' | sc='+sc.toFixed(2)+' sq='+sq.toFixed(2)+' sγ='+sg.toFixed(2)+
+
+        ' | dc='+dc.toFixed(2)+' dq='+dq.toFixed(2)+' dγ='+dg.toFixed(2)+'</span>';
+
+  html+='<span class="factors-line">qu = c·Nc·sc·dc + q·Nq·sq·dq + ½·γ·B·Nγ·sγ·dγ = '+qu_termoC.toFixed(0)+' + '+qu_termoQ.toFixed(0)+' + '+qu_termoG.toFixed(0)+' = '+qult.toFixed(0)+' kPa</span>';
+
+  html+='<span class="info-line">📍 País aplicado: '+paisActual+' · FS '+combinacion+' = '+FS.toFixed(2)+' conforme '+citaFS+'</span>';
+
+  // Fix 8: badge sísmica visível se V aplicado
+
+  if(combinacion==='sismico'&&isFinite(V_in)&&V_in>0&&khAplicado>0){
+
+    html+='<div class="sismo-badge">⚡ Sísmica ativa · V = '+V_in.toFixed(0)+' kPa · kh = '+khAplicado.toFixed(2)+' (país '+paisActual+') · ic·iq·iγ aplicados a qu</div>';
+
+  }
+
+  if(warningSismo) html+='<div class="calc-warning">'+warningSismo+'</div>';
+
+  if(notaSismo) html+='<span class="factors-line">🌊 '+notaSismo+'</span>';
+
+  if(notaNapa) html+='<span class="factors-line">💧 '+notaNapa+'</span>';
+
+  for(var i=0;i<warns.length;i++) html+='<div class="calc-warning">⚠ '+warns[i]+'</div>';
+
+  out.innerHTML=html;
+
+
+
+  if(note){note.textContent='FS = '+FS.toFixed(2)+' conforme '+citaFS+' — muda se selecionar outro país ou combinação.';}
+
+  return {qult:qult, qadm:qadm, FS:FS, citaFS:citaFS, paisActual:paisActual};
+
+}
+
+
+
+var f=document.getElementById('calc-form');if(!f)return;
+
+f.addEventListener('submit',function(e){e.preventDefault();calcular();});
+
+
+
+// Recalcular ao mudar país
+
+window.addEventListener('visor-normas:cambio-pais',function(){
+
+  if(document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+
+  var combinacion=document.getElementById('combinacion').value;
+
+  var paramKey=combinacion==='sismico'?'FS_sismico':(combinacion==='dinamico'?'FS_dinamico':'FS_estatico');
+
+  var FS=3.0,cita='—';
+
+  if(window.VisorNormas){var v=window.VisorNormas.getParam(paramKey);if(typeof v==='number'&&v>0)FS=v;cita=window.VisorNormas.getNormaCita(paramKey)||cita;}
+
+  var n=document.getElementById('calc-note-fs');if(n)n.textContent='FS = '+FS.toFixed(2)+' conforme '+cita+' — muda se selecionar outro país ou combinação.';
+
+});
+
+document.getElementById('combinacion').addEventListener('change',function(){
+
+  // Mostrar/ocultar campo V conforme combinação
+
+  var lblV=document.getElementById('lbl-V');
+
+  if(lblV){lblV.style.display=this.value==='sismico'?'flex':'none';}
+
+  if(document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+
+});
+
+// Estado inicial do campo V
+
+(function(){var lblV=document.getElementById('lbl-V');var sel=document.getElementById('combinacion');if(lblV&&sel){lblV.style.display=sel.value==='sismico'?'flex':'none';}})();
+
+
+
+// Fix 1: desabilitar L quando tipo ≠ retangular + sincronizar L=B
+
+function ajustarL(){
+
+  var tipo=document.getElementById('tipo').value;
+
+  var Lin=document.getElementById('L');
+
+  var Bin=document.getElementById('B');
+
+  if(tipo==='rectangular'){
+
+    Lin.disabled=false;
+
+    Lin.title='Comprimento independente de B (sapata retangular)';
+
+  } else {
+
+    Lin.disabled=true;
+
+    Lin.value=Bin.value;  // sincronizar
+
+    Lin.title=tipo==='corrida'?'Corrida: L é tratado como ≫B internamente':'L=B forçado pelo tipo '+tipo;
+
+  }
+
+}
+
+document.getElementById('tipo').addEventListener('change',function(){
+
+  ajustarL();
+
+  if(document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+
+});
+
+document.getElementById('B').addEventListener('input',function(){
+
+  // se tipo não é retangular, manter L=B
+
+  var tipo=document.getElementById('tipo').value;
+
+  if(tipo!=='rectangular'){document.getElementById('L').value=this.value;}
+
+});
+
+ajustarL(); // estado inicial
+
+document.getElementById('V').addEventListener('input',function(){
+
+  if(document.getElementById('combinacion').value==='sismico' && document.getElementById('calc-resultado').innerHTML.trim()!==''){calcular();}
+
+});
+
+
+
+// Comparador 4 países lado-a-lado
+
+document.getElementById('btn-comparar').addEventListener('click',function(){
+
+  if(!window.VisorNormas||!window.VisorNormas._dataAll){
+
+    alert('Carregando normas, tente em um momento.');return;
+
+  }
+
+  // Snapshot inputs atuais
+
+  var snap={B:document.getElementById('B').value,L:document.getElementById('L').value,
+
+    Df:document.getElementById('Df').value,Dw:document.getElementById('Dw').value,
+
+    gamma:document.getElementById('gamma').value,gsat:document.getElementById('gsat').value,
+
+    c:document.getElementById('c').value,phi:document.getElementById('phi').value,
+
+    tipo:document.getElementById('tipo').value,combinacion:document.getElementById('combinacion').value,
+
+    V:document.getElementById('V').value};
+
+  var paisOriginal=window.VisorNormas.getPais();
+
+  var resultados=[];
+
+  var dataAll=window.VisorNormas._dataAll;
+
+  Object.keys(dataAll.paises).forEach(function(p){
+
+    window.VisorNormas._setPais(p);
+
+    var res=calcular();
+
+    if(res){
+
+      var pData=dataAll.paises[p];
+
+      // Extrair info regulatória (não calculada)
+
+      // Fix 6: kh com zona representativa breve (extraída da nota do JSON)
+
+      var khP=pData.params.kh_horizontal;
+
+      var khInfo='—';
+
+      if(khP){
+
+        var nota=khP.nota||'';
+
+        // extrair "Zona X" ou segmento entre parênteses
+
+        var zonaMatch=nota.match(/\(([^)]+)\)/);
+
+        var zonaStr=zonaMatch?zonaMatch[1]:nota.split('—')[0].trim();
+
+        // toFixed(3) e depois trim de zeros excedentes para que 0.20→"0.20", 0.075→"0.075"
+
+        var khStr=khP.valor.toFixed(3).replace(/0$/,'').replace(/\.$/,'');
+
+        khInfo=khStr+' · '+zonaStr.slice(0,50);
+
+      }
+
+      var vs30=pData.params.Vs30_umbral_A? pData.params.Vs30_umbral_A.valor : (pData.params.Vs30_umbral_I? pData.params.Vs30_umbral_I.valor : '—');
+
+      var exencion=pData.params.exencion_EMS? pData.params.exencion_EMS.texto.split(':')[0]:'—';
+
+      // Fix 7: extrair fatores i do DOM renderizado (calculados por calcular())
+
+      var domI={ic:1,iq:1,ig:1};
+
+      var factoresMatch=document.getElementById('calc-resultado').innerHTML.match(/ic=([\d.]+)\s*·\s*iq=([\d.]+)\s*·\s*iγ=([\d.]+)/);
+
+      if(factoresMatch){domI.ic=parseFloat(factoresMatch[1]);domI.iq=parseFloat(factoresMatch[2]);domI.ig=parseFloat(factoresMatch[3]);}
+
+      resultados.push({pais:p,label:pData.label_largo||pData.label,
+
+        qult:res.qult,qadm:res.qadm,FS:res.FS,cita:res.citaFS,
+
+        khInfo:khInfo, vs30:vs30, exencion:exencion,
+
+        ic:domI.ic,iq:domI.iq,ig:domI.ig});
+
+    }
+
+  });
+
+  // Restaurar país original
+
+  window.VisorNormas._setPais(paisOriginal);
+
+  calcular();
+
+
+
+  // Render modal
+
+  var combinacionLabel={estatico:'Estática',sismico:'Sísmica',dinamico:'Cíclica'}[snap.combinacion];
+
+  var html='<button class="cmp-modal-close" aria-label="Fechar">×</button>';
+
+  html+='<h3>Comparativa entre 4 países — combinação '+combinacionLabel+'</h3>';
+
+  var inputsTxt='B='+snap.B+', L='+snap.L+', Df='+snap.Df+', γ='+snap.gamma+', c='+snap.c+', φ='+snap.phi+'°';
+
+  if(snap.combinacion==='sismico') inputsTxt+=', V='+snap.V+' kPa';
+
+  html+='<p style="font-size:.85rem;color:#475569;margin:.4rem 0 .8rem">Mesmos inputs ('+inputsTxt+'), país e norma diferentes.</p>';
+
+
+
+  // Tabela 1: Cálculo (qult, FS, qadm) — com fatores i se for sísmica
+
+  html+='<h4 style="margin:.8rem 0 .3rem;color:#0f2747;font-size:.95rem">📐 Resultado do cálculo</h4>';
+
+  var esSismica=(snap.combinacion==='sismico');
+
+  html+='<table class="cmp-table"><thead><tr><th>País</th><th>qult (kPa)</th><th>FS</th>';
+
+  if(esSismica){html+='<th>Fatores i (ic·iq·iγ)</th>';}
+
+  html+='<th>qadm líquida (kPa)</th><th>Norma FS aplicada</th></tr></thead><tbody>';
+
+  resultados.forEach(function(r){
+
+    html+='<tr><td><strong>'+r.label+'</strong></td><td>'+r.qult.toFixed(1)+'</td>';
+
+    html+='<td>'+r.FS.toFixed(2)+'</td>';
+
+    if(esSismica){
+
+      html+='<td style="font-size:.78rem;color:#0f766e">'+r.ic.toFixed(2)+' · '+r.iq.toFixed(2)+' · '+r.ig.toFixed(2)+'</td>';
+
+    }
+
+    html+='<td class="cmp-qadm">'+r.qadm.toFixed(1)+'</td>';
+
+    html+='<td><span class="cmp-norma-cita">'+r.cita+'</span></td></tr>';
+
+  });
+
+  html+='</tbody></table>';
+
+
+
+  // Tabela 2: Marco regulatório (info não calculada)
+
+  html+='<h4 style="margin:1.1rem 0 .3rem;color:#0f2747;font-size:.95rem">🌐 Marco regulatório (informação complementar)</h4>';
+
+  html+='<table class="cmp-table"><thead><tr><th>País</th><th>kh sísmico (zona representativa)</th><th>Vs30 — Classe de Sítio mais rígida do país</th><th>Isenção EMS</th></tr></thead><tbody>';
+
+  resultados.forEach(function(r){
+
+    html+='<tr><td><strong>'+r.label+'</strong></td>';
+
+    html+='<td style="font-size:.8rem">'+r.khInfo+'</td>';
+
+    html+='<td>'+r.vs30+'</td>';
+
+    html+='<td style="font-size:.8rem">'+r.exencion+'</td></tr>';
+
+  });
+
+  html+='</tbody></table>';
+
+  // Fix 5: nota explicativa Vs30
+
+  html+='<p style="font-size:.72rem;color:#94a3b8;margin:.3rem 0 0;font-style:italic">⚠ Nota Vs30: as classes A/I não são diretamente comparáveis entre normas — cada país define limiares distintos para "rocha dura". Um sítio Vs30=1000 m/s seria Classe de Sítio A no Chile (≥900) mas Classe B nos EUA (≥1500).</p>';
+
+
+
+  html+='<p style="font-size:.78rem;color:#64748b;margin-top:.8rem;font-style:italic">';
+
+  if(snap.combinacion==='estatico'){
+
+    html+='Na combinação <strong>estática</strong>, os 4 países compartilham FS=3.0 (consenso internacional). Para ver diferença no qadm, mude para combinação <strong>sísmica</strong> e insira V — os fatores de inclinação de carga (ic, iq, iγ) variam conforme kh por país.';
+
+  } else if(snap.combinacion==='sismico'){
+
+    html+='Em <strong>sísmica</strong>, EUA aplica FS=2.5 (mais conservador), CL/ES/BR aplicam FS=2.0. Além disso os kh variam: EUA 0.30 (high seismic CA) → CL 0.20 (Zona 3 ABNT NBR) → ES 0.10 → BR 0.075. Isso reduz qu por inclinação de carga.';
+
+  } else {
+
+    html+='Em cargas cíclicas não-sísmicas, a ABNT NBR 6122 é a mais conservadora (FS=4.0).';
+
+  }
+
+  html+='</p>';
+
+  var ov=document.querySelector('.cmp-overlay');
+
+  if(!ov){
+
+    ov=document.createElement('div');ov.className='cmp-overlay';
+
+    ov.innerHTML='<div class="cmp-modal" role="dialog" aria-modal="true"></div>';
+
+    document.body.appendChild(ov);
+
+    ov.addEventListener('click',function(e){if(e.target===ov)ov.classList.remove('cmp-open');});
+
+  }
+
+  ov.querySelector('.cmp-modal').innerHTML=html;
+
+  ov.querySelector('.cmp-modal-close').addEventListener('click',function(){ov.classList.remove('cmp-open');});
+
+  ov.classList.add('cmp-open');
+
+});
+
+})();
+
+// Toggle do drawer mobile
+
+(function(){
+
+  var btn=document.querySelector('.visor-mobile-toggle');
+
+  var panel=document.getElementById('visor-normas');
+
+  if(!btn||!panel)return;
+
+  btn.addEventListener('click',function(){
+
+    var isOpen=panel.classList.toggle('vn-mobile-open');
+
+    btn.setAttribute('aria-expanded',isOpen?'true':'false');
+
+    btn.textContent=isOpen?'✕ Fechar marco normativo':'📖 Ver marco normativo';
+
+  });
+
+})();
+
+</script>
+
+<script src="/widgets/visor-normas.js" data-slug="capacidad-portante-terzaghi-vesic"></script>
+
+
+
+<h2>Exemplo de cálculo</h2>
+
+<table class="ejemplo">
+
+<caption>Dados de entrada — sapata isolada edifício residencial em zona urbana</caption>
+
+<thead><tr><th>Parâmetro</th><th>Valor</th></tr></thead>
+
+<tbody>
+
+<tr><td>B × L (largura × comprimento)</td><td>2,0 × 2,0 m</td></tr>
+
+<tr><td>Profundidade de assentamento Df</td><td>1,5 m</td></tr>
+
+<tr><td>Coesão c</td><td>10 kPa</td></tr>
+
+<tr><td>Ângulo de atrito φ</td><td>30°</td></tr>
+
+<tr><td>Peso específico γ</td><td>18 kN/m³</td></tr>
+
+<tr><td>Nível freático</td><td>Não detectado em 5 m</td></tr>
+
+<tr><td>FS estático</td><td>3,0</td></tr>
+
+</tbody>
+
+</table>
+
+<p>Fatores com φ = 30°: Nq = e^(π·0,577) · tan²60° = 6,40 · 3,0 = 18,4; Nc = (18,4 − 1) / 0,577 = 30,1; Nγ = 2 · 19,4 · 0,577 = 22,4. Sobrecarga q = γ · Df = 18 · 1,5 = 27 kPa. Fatores de forma (B/L = 1): sc = 1 + 1·(18,4/30,1) = 1,61; sq = 1 + 1·0,577 = 1,58; sγ = 1 − 0,4 = 0,6. Fatores de profundidade (Df/B = 0,75): dq = 1 + 2·0,577·(1 − 0,5)² · 0,75 = 1 + 0,217 = 1,22; dc ≈ 1,23; dγ = 1. qu = 10·30,1·1,61·1,23 + 27·18,4·1,58·1,22 + 0,5·18·2·22,4·0,6·1 = 596 + 957 + 242 = 1 795 kPa. qadm = (1 795 − 27) / 3 + 27 = 616 kPa.</p>
+
+<p class="resultado"><strong>Resultado:</strong> qu = 1 795 kPa · qadm = 616 kPa (FS = 3, estático).</p>
+
+
+
+<h2>Interpretação dos resultados</h2>
+
+<p>Uma capacidade admissível de 616 kPa é alta e típica de solo arenoso denso com coesão aparente. Para projeto real deve-se verificar também recalques (Schmertmann ou elástico) porque frequentemente governam sobre a capacidade de carga. Na presença de lençol sob a sapata, é necessário substituir γ por γ' = γsat − γw nos termos afetados, o que pode reduzir qadm em 30-50 %. Em zona sísmica, a ABNT NBR 6122 permite FS = 2 para combinações com sismo.</p>
+
+
+
+<h2>Normativas de referência</h2>
+
+<ul>
+
+<li>ABNT NBR 6122 — Projeto e execução de fundações</li>
+
+<li>ABNT NBR 6484 — Sondagem de simples reconhecimento com SPT — Método de ensaio</li>
+
+<li>Terzaghi, K. (1943). Mecânica dos Solos Teórica</li>
+
+<li>Vesic, A.S. (1973). Análise de cargas últimas de fundações rasas</li>
+
+<li>Meyerhof, G.G. (1963). Algumas pesquisas recentes sobre capacidade de carga</li>
+
+<li>ABNT NBR 6122 — Combinações com sismo</li>
+
+</ul>
+
+
+
+<h2>Perguntas frequentes</h2>
+
+<details><summary>Quando uso Terzaghi e quando Vesic?</summary><p>Terzaghi clássico é útil para verificação manual rápida com sapatas corridas sem inclinação de carga nem lençol. Vesic é a formulação geral e é recomendada na prática atual porque incorpora fatores de forma, profundidade, inclinação e base inclinada. A ABNT NBR 6122 aceita ambas desde que as hipóteses sejam documentadas.</p></details>
+
+<details><summary>Qual fator de segurança usar?</summary><p>Para combinações estáticas, FS = 3,0 é o mínimo tradicional. A ABNT NBR 6122 permite FS = 2,0 para combinações com sismo severo. Se houver cargas cíclicas sem sismo (maquinário) eleva-se para FS = 4,0. Projetos LRFD usam fatores de resistência (0,45-0,60) em vez de FS global.</p></details>
+
+<details><summary>Como tratar o lençol freático?</summary><p>Se o lençol estiver acima da base da sapata, todos os γ dos termos afetados são substituídos por γ'. Se estiver entre a base e Df, pondera-se conforme a profundidade. Se estiver abaixo da sapata a mais de 1·B, não afeta significativamente. É um erro frequente esquecer este ajuste: pode superestimar qu em 30-50 %.</p></details>
+
+<details><summary>Capacidade de carga ou recalque governa o projeto?</summary><p>Em solos granulares densos e rochas, a capacidade de carga costuma ser conservadora e o recalque é determinante. Em argilas moles e siltes compressíveis, o contrário. Projetar apenas por capacidade de carga sem verificar recalque é uma má prática que pode levar ao colapso de edifícios por recalques diferenciais excessivos.</p></details>
+
+
+
+<h2>Calculadoras relacionadas</h2>
+
+<ul>
+
+<li><a href="/">Recalque elástico — método Schmertmann</a></li>
+
+<li><a href="/">Adensamento 1D Terzaghi</a></li>
+
+<li><a href="/">Verificação de muro — FS tombamento e deslizamento</a></li>
+
+<li><a href="/">SPT — correlações de φ, Dr, Su</a></li>
+
+</ul>
+
+
+
+</article>
+
+
+
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+
+  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Capacidade de Carga</h3>
+
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora de Recalque Elástico — Schmertmann</a></li>
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora de Capacidade Axial de Estacas — ponta, atrito e admissível</a></li>
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora de Adensamento 1D — Terzaghi</a></li>
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora de Adensamento 3D — Efeito Mandel-Cryer</a></li>
+
+  </ul>
+
+  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+
+    Mais ferramentas em <a href="/" style="color:#0d9488">Capacidade de Carga</a> · Voltar ao
+
+    <a href="/" style="color:#0d9488">índice de Geotecnia Brasil</a>
+
+  </p>
+
+</aside>
+
+</article>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<div>
+
+<h4>Geotecnia Brasil</h4>
+
+<p>Serviços geotécnicos profissionais (Brasil).</p>
+
+<p class="footer-designer-credit">Site projetado por equipe geotécnica</p>
+
+</div>
+
+<div>
+
+<h4>Contato</h4>
+
+<p>Email: <a href="/cdn-cgi/l/email-protection#1b7874756f7a6f745b7c7e746f7e7875727a79697a68727735787476"><span class="__cf_email__" data-cfemail="91f2feffe5f0e5fed1f6f4fee5f4f2fff8f0f3e3f0e2f8fdbff2fefc">[email&#160;protected]</span></a></p>
+
+</div>
+
+<div>
+
+<h4>Serviços</h4>
+
+<p><a href="/sondagem-spt/">Sondagem SPT</a><br><a href="/laboratorio-mecanica-solos/">Laboratório de Mecânica dos Solos</a><br><a href="/estabilidade-taludes/">Estabilidade de Taludes</a><br><a href="/projeto-muros-contencao/">Projeto de Muros de Contenção</a></p>
+
+</div>
+
+<div>
+
+<h4>Legal</h4>
+
+<p><a href="/sitemap.xml">Mapa do site</a></p>
+
+</div>
+
+<div class="copyr">© 2026 Geotecnia Brasil</div>
+
+</div>
+
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://geotecniabrasil.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculadora Capacidade de Carga Terzaghi e Vesic", "item": "https://geotecniabrasil.com/blog/calculadoras/capacidad-portante-terzaghi-vesic/"}]}, {"@type": "Article", "headline": "Calculadora Capacidade de Carga Terzaghi e Vesic", "inLanguage": "pt", "description": "A capacidade de carga última qu e admissível qadm definem a pressão que uma sapata pode transmitir ao solo sem ruptura por cisalhamento nem produzir recalq", "url": "https://geotecniabrasil.com/blog/calculadoras/capacidad-portante-terzaghi-vesic/", "mainEntityOfPage": "https://geotecniabrasil.com/blog/calculadoras/capacidad-portante-terzaghi-vesic/", "publisher": {"@type": "Organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/"}}]}</script>
+
+</body>
+
+</html>
