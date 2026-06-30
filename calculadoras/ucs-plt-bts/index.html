@@ -1,851 +1,851 @@
-<!doctype html>
-
-<html lang="pt">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Calculadora UCS a partir de PLT (Is50) e BTS | Geotecnia Brasil</title>
-
-<meta name="description" content="A resistência à compressão uniaxial UCS é o parâmetro chave da rocha intacta nos critérios de Hoek-Brown, projeto de túneis, estabilidade de taludes e cara">
-
-<meta name="theme-color" content="#0f3a3a">
-
-<link rel="canonical" href="https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/">
-
-<meta property="og:type" content="website">
-
-<meta property="og:title" content="Calculadora UCS a partir de PLT (Is50) e BTS">
-
-<meta property="og:description" content="Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.">
-
-<meta property="og:url" content="https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/">
-
-<meta property="og:site_name" content="Geotecnia Brasil">
-
-<meta property="og:image" content="https://geotecniabrasil.com/img/cimentaciones-superficiales-langpt-5.webp">
-
-<meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="Calculadora UCS a partir de PLT (Is50) e BTS">
-
-<meta name="twitter:description" content="Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.">
-
-<meta name="twitter:image" content="https://geotecniabrasil.com/img/cimentaciones-superficiales-langpt-5.webp">
-
-<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A2540'/%3E%3Cpath d='M14 44 L24 30 L34 38 L44 22 L50 28' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
-
-
-
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Geotecnia Brasil Brasil", "description": "Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.", "url": "https://geotecniabrasil.com/", "areaServed": {"@type": "City", "name": "Brasil"}, "address": {"@type": "PostalAddress", "addressLocality": "Brasil", "addressCountry": "Brasil"}, "email": "contato@geotecniabrasil.com", "priceRange": "$$"}</script>
-
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Estudo Geotécnico · Estudo Geotécnico e Sondagem SPT — Brasil", "url": "https://geotecniabrasil.com/", "description": "Estudo geotécnico para obras de infraestrutura, fundações e contenções. Cobertura nacional com laboratório próprio e equipe especializada.", "inLanguage": "pt", "datePublished": "2026-05-31", "dateModified": "2026-05-31", "isPartOf": {"@type": "WebSite", "url": "https://geotecniabrasil.com/", "name": "Geotecnia Brasil"}}</script>
-
-
-
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://geotecniabrasil.com/#organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/", "logo": "https://geotecniabrasil.com/img/logo.png", "email": "contato@geotecniabrasil.com", "address": {"@type": "PostalAddress", "addressCountry": "Brasil"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 38, "bestRating": 5, "worstRating": 1}}</script>
-
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://geotecniabrasil.com/#website", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/", "inLanguage": "pt", "publisher": {"@id": "https://geotecniabrasil.com/#organization"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://geotecniabrasil.com/?s={search_term_string}"}, "query-input": "required name=search_term_string"}}</script>
-
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual a profundidade mínima exigida para um estudo geotécnico?", "acceptedAnswer": {"@type": "Answer", "text": "A profundidade deve atingir pelo menos 3 metros abaixo do nível previsto da fundação, ou até encontrar camada resistente, conforme NBR 6484."}}, {"@type": "Question", "name": "Como a sazonalidade das chuvas afeta os parâmetros do solo?", "acceptedAnswer": {"@type": "Answer", "text": "Solos não saturados podem perder resistência com o aumento da umidade. Ensaios de laboratório devem simular as condições críticas de saturação."}}, {"@type": "Question", "name": "O estudo geotécnico é obrigatório para todas as obras?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a NBR 6122 exige investigação geotécnica para qualquer obra de fundação, independentemente do porte."}}]}</script>
-
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://geotecniabrasil.com/equipo/ricardo-albuquerque/#person", "name": "Ricardo Albuquerque", "jobTitle": "Engenheiro Geotécnico Sênior", "image": "https://geotecniabrasil.com/img/headshot_intl_geotecniabrasil-com.webp", "worksFor": {"@type": "Organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com"}, "url": "https://geotecniabrasil.com/equipo/ricardo-albuquerque/"}</script>
-
-
-
-<meta name="layout" content="L3">
-
-<link rel="preload" as="image" href="img/cimentaciones-superficiales-langpt-5.webp" fetchpriority="high">
-
-<style>
-
-
-
-:root{
-
-  --primary:#0f3a3a;
-
-  --accent:#10b981;
-
-  --bg:#f7fafa;
-
-  --surface:#fff;
-
-  --text:#1a2122;
-
-  --border:#e2e8e7;
-
-  --muted:#64748b;
-
-  --font-body:'Inter',-apple-system,sans-serif;
-
-  --font-h:'Lora',Georgia,serif;
-
-}
-
-*{box-sizing:border-box;margin:0;padding:0}
-
-html{scroll-behavior:smooth}
-
-body{font-family:var(--font-body);line-height:1.65;color:var(--text);background:var(--bg)}
-
-a{color:var(--primary);text-decoration:none}
-
-a:hover{text-decoration:underline}
-
-/* Prose links — links dentro del contenido principal SIEMPRE visibles (underline + accent) */
-
-main section.block p a, main section.block li a, .cierre a {
-
-    color: var(--accent);
-
-    text-decoration: underline;
-
-    text-decoration-thickness: 1px;
-
-    text-underline-offset: 2px;
-
-    font-weight: 500;
-
-}
-
-main section.block p a:hover, main section.block li a:hover, .cierre a:hover {
-
-    text-decoration-thickness: 2px;
-
-    color: var(--primary);
-
-}
-
-.container{max-width:1400px;margin:0 auto;padding:0 24px}
-
-header{background:var(--primary);color:#fff;padding:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-
-header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
-
-header .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-
-header .brand-link:hover{text-decoration:none}
-
-header .logo{flex-shrink:0;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
-
-header .brand-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;line-height:1.1}
-
-header .brand-name{font-family:var(--font-h);font-size:1.18rem;font-weight:700;letter-spacing:.02em;color:#fff}
-
-header .brand-sep{color:#64748b;font-weight:300}
-
-header .brand-sub{font-size:.78rem;font-weight:400;color:#cbd5e1;letter-spacing:.02em}
-
-@media(max-width:560px){header .brand-sep,header .brand-sub{display:none}}
-
-header .navbar{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
-
-header .nav-link{color:#e2e8f0;padding:8px 14px;border-radius:6px;font-size:.92rem;font-weight:500;transition:background .15s,color .15s;text-decoration:none;background:transparent;border:none;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px}
-
-header .nav-link:hover,header .nav-link[aria-expanded="true"]{background:rgba(255,255,255,.1);color:#fff;text-decoration:none}
-
-header .nav-dd{position:relative}
-
-header .dd-arrow{font-size:.7rem;opacity:.8;transition:transform .15s}
-
-header .nav-link[aria-expanded="true"] .dd-arrow{transform:rotate(180deg)}
-
-header .dd-menu{position:absolute;top:calc(100% + 6px);left:0;background:#fff;min-width:240px;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:6px 0;display:none;z-index:1000;border:1px solid rgba(0,0,0,.06)}
-
-header .nav-dd.open .dd-menu{display:block}
-
-header .dd-menu a{display:block;padding:10px 18px;color:#1f2937;font-size:.92rem;text-decoration:none;transition:background .12s}
-
-header .dd-menu a:hover{background:#f3f4f6;color:var(--primary);text-decoration:none}
-
-header .dd-menu a{display:flex!important;align-items:center;justify-content:space-between;gap:14px}
-
-header .hub-badge{display:inline-block;background:color-mix(in srgb, var(--accent) 18%, #fff 82%);color:var(--primary);font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:11px;line-height:1.4}
-
-header .nav-burger{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;padding:6px 12px;border-radius:6px;font-size:1.1rem;cursor:pointer}
-
-@media(max-width:780px){
-
-  header .container{flex-wrap:wrap}
-
-  header .nav-burger{display:inline-block}
-
-  header .navbar{display:none;width:100%;margin-top:14px;flex-direction:column;align-items:stretch;gap:2px;background:rgba(0,0,0,.15);padding:10px;border-radius:8px}
-
-  body.nav-open header .navbar{display:flex}
-
-  header .nav-dd{width:100%}
-
-  header .dd-menu{position:static;box-shadow:none;background:rgba(255,255,255,.04);border:none;padding:0;margin-top:4px}
-
-  header .dd-menu a{color:#e2e8f0;padding:8px 18px}
-
-  header .dd-menu a:hover{background:rgba(255,255,255,.08);color:#fff}
-
-}
-
-.hero{background:linear-gradient(180deg,var(--primary) 0%,color-mix(in srgb, var(--primary) 80%, var(--accent) 20%) 100%);color:#fff;padding:36px 0 50px}
-
-.hero h1{font-family:var(--font-h);font-size:2.1rem;line-height:1.25;font-weight:700;margin-bottom:12px;max-width:1280px}
-
-.hero p.subtitle{font-size:1.05rem;color:#cbd5e1;max-width:1100px;margin-bottom:18px}
-
-.breadcrumb{padding:0 0 14px;font-size:.85rem;color:#cbd5e1;background:transparent;border:none}
-
-.breadcrumb a{color:#93c5fd;text-decoration:none}
-
-.breadcrumb a:hover{color:#fff;text-decoration:underline}
-
-.breadcrumb span{color:#fff;font-weight:500}
-
-.block{background:var(--surface);border-radius:10px;padding:26px 30px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid var(--border);overflow:hidden}
-
-.block::after{content:'';display:table;clear:both}
-
-h2{font-family:var(--font-h);font-size:1.45rem;color:var(--primary);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
-
-h3{font-family:var(--font-h);font-size:1.1rem;color:var(--primary);margin:14px 0 8px;font-weight:600}
-
-p{margin-bottom:12px;color:var(--text)}
-
-/* hero/inline img v3 — float right + cap dimensiones (anti-explotación portrait) */
-
-section.block{overflow:auto}
-
-section.block .hero-img-wrap{float:right;max-width:340px;width:340px;max-height:280px;margin:6px 0 16px 24px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10);display:block}
-
-section.block .hero-img-wrap img{max-width:100%;max-height:280px;width:100%;height:280px;object-fit:cover;display:block;border-radius:10px}
-
-.inline-img{float:right;max-width:300px;width:300px;max-height:220px;margin:6px 0 18px 20px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
-
-.inline-img img{max-width:100%;max-height:220px;width:100%;height:220px;object-fit:cover;display:block;border-radius:10px}
-
-section.block h2{clear:both;margin-top:0}
-
-@media (max-width:768px){
-
-  section.block{overflow:visible}
-
-  section.block .hero-img-wrap{float:none;width:100%;max-width:100%;max-height:240px;margin:18px auto}
-
-  section.block .hero-img-wrap img{height:240px;max-height:240px}
-
-  .inline-img{float:none;width:100%;max-width:100%;max-height:220px;margin:18px auto}
-
-}
-
-main img:not([class]){max-width:100%;height:auto}
-
-@media(max-width:680px){.inline-img{float:none;width:100%;max-width:100%;margin:18px auto}}
-
-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem;border-radius:6px;overflow:hidden}
-
-table th{background:var(--primary);color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
-
-table td{padding:10px 14px;border-bottom:1px solid var(--border)}
-
-table tr:nth-child(even) td{background:color-mix(in srgb, var(--bg) 50%, #f8fafc 50%)}
-
-.norm-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
-
-.norm-list li{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);color:var(--primary);padding:8px 14px;border-radius:6px;border-left:3px solid var(--primary);font-family:ui-monospace,monospace;font-size:.92rem}
-
-.faq details{background:color-mix(in srgb, var(--bg) 60%, #f8fafc 40%);padding:14px 18px;margin-bottom:8px;border-radius:8px;border-left:3px solid var(--primary)}
-
-.faq summary{font-weight:600;cursor:pointer;color:var(--primary);font-size:1.02rem;list-style:none}
-
-.faq summary::-webkit-details-marker{display:none}
-
-.faq summary::after{content:'+';float:right;font-size:1.4rem;line-height:1;color:var(--muted)}
-
-.faq details[open] summary::after{content:'−'}
-
-.faq details[open] p{margin-top:12px;color:var(--text)}
-
-#mapa-ciudad{height:340px;border-radius:8px;border:1px solid var(--border);z-index:1}
-
-.sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;font-weight:600}
-
-.sidebar ul{list-style:none}
-
-.sidebar li{margin-bottom:6px}
-
-.sidebar a{color:var(--primary);font-size:.93rem;display:block;padding:8px 10px;border-radius:5px;transition:background .12s}
-
-.sidebar a:hover{background:color-mix(in srgb, var(--accent) 10%, #fff 90%);text-decoration:none}
-
-.cierre{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);padding:20px 26px;border-radius:8px;border-left:4px solid var(--primary);margin-top:24px;color:var(--text);font-style:italic}
-
-.author-byline{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--primary);padding:14px 18px;border-radius:8px;display:flex;align-items:center;gap:14px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-
-.author-byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--border)}
-
-.author-byline .author-info{flex:1;min-width:0}
-
-.author-byline .author-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-
-.author-byline .author-name{font-size:1rem;font-weight:700;color:var(--primary);display:block;text-decoration:none;line-height:1.3}
-
-.author-byline .author-title{font-size:.82rem;color:var(--muted);margin-top:2px}
-
-.author-byline .author-date{font-size:.72rem;color:var(--muted);text-align:right;line-height:1.5;flex-shrink:0}
-
-@media(max-width:560px){.author-byline{flex-wrap:wrap}.author-byline .author-date{text-align:left;width:100%;margin-top:8px;border-top:1px solid var(--border);padding-top:8px}}
-
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
-
-.service-card{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;background:var(--bg);border-radius:8px;border:1px solid var(--border);text-decoration:none;color:var(--primary);transition:transform .15s,box-shadow .15s,border-color .15s}
-
-.service-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08);border-color:var(--accent);text-decoration:none}
-
-.service-card .card-title{font-weight:600;font-size:1.02rem}
-
-.service-card .card-arrow{font-size:1.3rem;color:var(--accent)}
-
-.sat-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-
-.sat-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 7%, #fff 93%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s}
-
-.sat-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
-
-.sat-to-hub{display:flex;align-items:center;justify-content:space-between;gap:14px;background:color-mix(in srgb, var(--primary) 6%, #fff 94%);border-left:4px solid var(--primary);padding:14px 22px;border-radius:6px;margin:0 0 22px;font-size:.95rem;flex-wrap:wrap}
-
-.sat-to-hub-label{color:var(--text)}
-
-.sat-to-hub-link{color:var(--primary);font-weight:600;text-decoration:none;white-space:nowrap}
-
-.sat-to-hub-link:hover{text-decoration:underline}
-
-.cta-block,section.block.cta-block{background:linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 70%, var(--accent) 30%) 100%)!important;color:#fff!important;border:none!important;padding:36px 40px!important;text-align:center!important;border-radius:12px!important;box-shadow:0 4px 18px rgba(0,0,0,.12)!important;margin:32px auto!important;border-top:none!important;max-width:760px!important}
-
-.cta-block .cta-inner{margin:0 auto;max-width:600px;text-align:center}
-
-@media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
-
-.cta-block h2,section.block.cta-block h2{color:#fff!important;border-bottom:none!important;padding-bottom:0!important;font-size:1.55rem!important;margin-bottom:10px!important;text-shadow:0 1px 2px rgba(0,0,0,.15)!important}
-
-.cta-block h2::after,section.block.cta-block h2::after{display:none!important;content:none!important}
-
-.cta-block p,section.block.cta-block p{color:#e2e8f0!important;margin-bottom:18px!important;font-size:1rem!important;max-width:none!important}
-
-.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
-
-.cta-wa,.cta-email{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .12s,box-shadow .12s}
-
-.cta-wa{background:#25d366;color:#fff}
-
-.cta-wa:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,.4);text-decoration:none}
-
-.cta-email{background:#fff;color:var(--primary)}
-
-.cta-email:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.2);text-decoration:none}
-
-.cta-email-note{font-size:.85rem;color:#cbd5e1;margin-top:8px;margin-bottom:0}
-
-.cta-email-note a{color:#93c5fd}
-
-.cta-email-note a:hover{color:#fff}
-
-/* Cities chips (S4) — internal linking bottom-of-page */
-
-.city-chips-section{margin:30px auto 24px;max-width:1200px}
-
-.city-chips-section > h2{font-family:var(--font-h);font-size:1.35rem;color:var(--primary);margin-bottom:18px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
-
-.city-chips-zone{margin-bottom:18px}
-
-.city-chips-zone:last-child{margin-bottom:0}
-
-.city-chips-zone-title{font-family:var(--font-h);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px;font-weight:700;border:none;padding:0}
-
-.city-chips-row{display:flex;flex-wrap:wrap;gap:8px}
-
-.city-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 6%, #fff 94%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s,box-shadow .12s;font-weight:500;line-height:1.2;white-space:nowrap}
-
-.city-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);color:var(--primary);text-decoration:none;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.06)}
-
-@media(max-width:560px){.city-chip{font-size:.85rem;padding:6px 12px}}
-
-footer{background:var(--primary);color:#cbd5e1;padding:36px 0;margin-top:50px}
-
-footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;align-items:start}
-
-footer h4{color:#fff;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
-
-footer p,footer a{color:#cbd5e1;font-size:.88rem;line-height:1.7}
-
-footer a:hover{color:#fff}
-
-footer .copyr{grid-column:1/-1;border-top:1px solid color-mix(in srgb, var(--primary) 60%, #fff 40%);padding-top:18px;text-align:center;color:#94a3b8;font-size:.82rem}
-
-footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;font-style:italic}
-
-
-
-
-
-.mag-layout{padding:42px 24px;max-width:1320px;margin:0 auto}
-
-.mag-layout main{min-width:0}
-
-.mag-layout h1{font-size:2.8rem!important;line-height:1.15;letter-spacing:-.02em;font-weight:800}
-
-.mag-layout .block{padding:30px 40px;background:transparent;border:none;border-top:1px solid var(--border);border-radius:0;box-shadow:none;margin-bottom:0}
-
-.mag-layout .block:first-child{border-top:none}
-
-.mag-layout h2{font-size:1.6rem;border-bottom:none;padding-bottom:0}
-
-.mag-layout p:first-of-type{font-size:1.08rem;line-height:1.7;color:var(--text)}
-
-/* drop-cap REMOVIDO 2026-05-27 (user feedback) — afectaba a todos los párrafos de cards/bloques */
-
-
-
-</style>
-
-
-
-<link rel="stylesheet" href="/calc-scoped.css">
-
-<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><style id="selfhost-fonts">body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style></head>
-
-<body>
-
-<header>
-
-<div class="container">
-
-<a class="brand-link" href="/">
-
-<svg class="logo" width="38" height="38" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-
-  <defs>
-
-    <linearGradient id="lg656" x1="0" y1="0" x2="1" y2="1">
-
-      <stop offset="0%" stop-color="var(--accent)"/>
-
-      <stop offset="100%" stop-color="var(--primary)"/>
-
-    </linearGradient>
-
-  </defs>
-
-  <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#lg656)"/>
-
-  <path d="M14 44 L24 30 L34 38 L44 22 L50 28" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <circle cx="24" cy="30" r="3" fill="#fff"/>
-
-  <circle cx="34" cy="38" r="3" fill="#fff"/>
-
-  <circle cx="44" cy="22" r="3" fill="#fff"/>
-
-</svg>
-
-<div class="brand-line">
-
-  <span class="brand-name">Geotecnia Brasil</span>
-
-  <span class="brand-sep">·</span>
-
-  <span class="brand-sub">Engenharia Geotécnica</span>
-
-</div>
-
-</a>
-
-<nav class="navbar" aria-label="principal">
-
-<a href="/" class="nav-link">Início</a><a class="nav-link" href="/calculadoras/">Calculadoras</a>
-
-<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Serviços<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/sondagem-spt/" role="menuitem">Sondagem SPT</a><a href="/laboratorio-mecanica-solos/" role="menuitem">Laboratório de Mecânica dos Solos</a><a href="/estabilidade-taludes/" role="menuitem">Estabilidade de Taludes</a><a href="/projeto-muros-contencao/" role="menuitem">Projeto de Muros de Contenção</a></div></div>
-
-<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Cobertura<span class="dd-arrow">▾</span></button><div class="dd-menu" role="menu"><a href="/estudo-geotecnico-em-sao-paulo/" role="menuitem" class="hub-main"><strong>Sao Paulo</strong></a><a href="/estudo-geotecnico-em-rio-de-janeiro/" role="menuitem" class="hub-main"><strong>Rio De Janeiro</strong></a><a href="/estudo-geotecnico-em-brasilia/" role="menuitem" class="hub-main"><strong>Brasilia</strong></a><a href="/estudo-geotecnico-em-salvador/" role="menuitem" class="hub-main"><strong>Salvador</strong></a><a href="/estudo-geotecnico-em-fortaleza/" role="menuitem" class="hub-main"><strong>Fortaleza</strong></a><a href="/estudo-geotecnico-em-belo-horizonte/" role="menuitem" class="hub-main"><strong>Belo Horizonte</strong></a><a href="/estudo-geotecnico-em-manaus/" role="menuitem" class="hub-main"><strong>Manaus</strong></a><a href="/estudo-geotecnico-em-curitiba/" role="menuitem" class="hub-main"><strong>Curitiba</strong></a><a href="/estudo-geotecnico-em-recife/" role="menuitem" class="hub-main"><strong>Recife</strong></a><a href="/estudo-geotecnico-em-porto-alegre/" role="menuitem" class="hub-main"><strong>Porto Alegre</strong></a></div></div>
-
-<a href="/equipo/ricardo-albuquerque/" class="nav-link">Equipe</a>
-
-</nav>
-
-<button class="nav-burger" aria-label="menú" onclick="document.body.classList.toggle('nav-open')">☰</button>
-
-</div>
-
-</header>
-
-<main>
-
-<nav aria-label="breadcrumb" style="max-width:900px;margin:1.4rem auto 0;padding:0 1.5rem;font-size:.85rem;color:#64748b"><a href="/" style="color:inherit;text-decoration:none">Início</a> &rsaquo; <span>Calculadora UCS a partir de PLT (Is50) e BTS</span></nav>
-
-<article class="calc-scope" style="max-width:900px;margin:0 auto;padding:1.5rem">
-
-<h1>Calculadora UCS a partir de PLT (Is50) e BTS</h1>
-
-
-
-<p class="lead">A resistência à compressão uniaxial UCS é o parâmetro chave da rocha intacta nos critérios de Hoek-Brown, projeto de túneis, estabilidade de taludes e caracterização geotécnica. No entanto, os ensaios UCS em prensa requerem testemunhos de alta qualidade e são caros. O ensaio de Carga Pontual (PLT) fornece o Is50 em fragmentos irregulares ou testemunhos curtos com equipamento portátil, e o ensaio Brasileiro (BTS) fornece a resistência à tração indireta. Esta calculadora aplica as correlações ISRM e K específicos por litologia para converter Is50 e BTS em UCS equivalente, economizando ensaios UCS onde a correlação é confiável.</p>
-
-
-
-<h2>O que são PLT e BTS?</h2>
-
-<p>PLT (Ensaio de Carga Pontual, ABNT NBR + ASTM D5731) carrega um testemunho entre duas pontas cônicas até a ruptura e reporta-se o Is50 (índice corrigido para D = 50 mm). BTS (Resistência à Tração Brasileira, ABNT NBR + ASTM D3967) aplica carga diametral sobre um disco de rocha para induzir tração indireta. Ambos são ensaios rápidos, portáteis e econômicos comparados ao UCS em prensa MTS. São usados para caracterização massiva de sondagens, controle de qualidade em mineração e estimativa de σci para Hoek-Brown. A norma ISRM recomenda complementar com UCS direto em amostras representativas.</p>
-
-
-
-<h2>Fórmulas aplicadas</h2>
-
-<div class="formulas">
-
-<p><strong>PLT — Is50 corrigido:</strong></p>
-
-<p>Is = P / De²; De = diâmetro equivalente (testemunho ou fragmento)</p>
-
-<p>Is50 = F · Is, com F = (De/50)^0,45 (correção por tamanho)</p>
-
-<p><strong>Correlação UCS-Is50 (ISRM):</strong></p>
-
-<p>UCS = K · Is50, com K típico = 22-24 (recomendação ISRM para rochas genéricas)</p>
-
-<p>Valores específicos: K = 14-24 sedimentares (arenito, calcário); K = 15-22 ígneas extrusivas; K = 18-28 ígneas intrusivas; K = 10-14 metamórficas xistosas</p>
-
-<p><strong>BTS — resistência à tração:</strong></p>
-
-<p>σt = 2P / (π·D·t), com P carga de ruptura, D diâmetro, t espessura do disco</p>
-
-<p><strong>Correlação UCS-BTS:</strong></p>
-
-<p>UCS ≈ 8-14 · BTS (faixa típica; ISRM sugere 10)</p>
-
-<p><strong>Critério de ensaio válido PLT (ABNT NBR + ASTM D5731):</strong> ruptura simétrica através do eixo de carga, não por fissuras pré-existentes</p>
-
-</div>
-
-
-
-<div class="calc-split-layout">
-
-<section class="calc-widget" aria-label="Calculadora UCS a partir de Is50 e BTS">
-
-<h2>Calcular online</h2>
-
-<p class="calc-intro">UCS estimado a partir do Point Load Is50 (ABNT NBR + ASTM D5731) e/ou BTS (ensaio brasileiro ABNT NBR + ASTM D3967). Classificação ISRM R1-R6 automática.</p>
-
-<form id="calc-form" novalidate>
-
-<div class="calc-row">
-
-<label>Is50 Carga Pontual (MPa)<input type="number" id="is50" step="0.1" value="4" min="0" max="30" required></label>
-
-<label>K (Is50→UCS)<input type="number" id="kplt" step="0.5" value="23" min="10" max="30" required></label>
-
-<label>BTS resistência à tração (MPa)<input type="number" id="bts" step="0.1" value="8" min="0" max="50" required></label>
-
-<label>K (BTS→UCS)<input type="number" id="kbts" step="0.5" value="12" min="8" max="16" required></label>
-
-</div>
-
-<button type="submit">Calcular UCS</button>
-
-</form>
-
-<div id="calc-resultado" role="status" aria-live="polite"></div>
-
-<p class="calc-note">Valores K referenciais: PLT 22-24 (média 23); BTS 10 (frágil) a 12-15 (média). ISRM: R1 &lt;5 · R2 5-25 · R3 25-50 · R4 50-100 · R5 100-250 · R6 &gt;250 MPa.</p>
-
-</section>
-
-
-
-<aside class="visor-normas-aside" aria-label="Marco normativo aplicável">
-
-<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">📖 Ver marco normativo</button>
-
-<div id="visor-normas" class="visor-normas-panel"></div>
-
-</aside>
-
-</div>
-
-<script src="/widgets/visor-normas.js" data-slug="ucs-plt-bts"></script>
-
-<script>
-
-(function(){var btn=document.querySelector('.visor-mobile-toggle');var panel=document.getElementById('visor-normas');if(!btn||!panel)return;btn.addEventListener('click',function(){var isOpen=panel.classList.toggle('vn-mobile-open');btn.setAttribute('aria-expanded',isOpen?'true':'false');btn.textContent=isOpen?'✕ Fechar marco normativo':'📖 Ver marco normativo';});})();
-
-</script>
-
-<style>
-
-.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
-
-.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
-
-.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
-
-.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1rem}
-
-.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
-
-.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
-
-.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
-
-.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
-
-.calc-widget button:hover{background:#115e59}
-
-.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
-
-.calc-widget #calc-resultado:empty{display:none}
-
-.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
-
-.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
-
-.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
-
-</style>
-
-<script>
-
-(function(){
-
-var f=document.getElementById('calc-form');if(!f)return;
-
-function isrm(u){
-
-if(u<5)return 'R1 (muito fraca)';
-
-if(u<25)return 'R2 (fraca)';
-
-if(u<50)return 'R3 (medianamente resistente)';
-
-if(u<100)return 'R4 (resistente)';
-
-if(u<250)return 'R5 (muito resistente)';
-
-return 'R6 (extremamente resistente)';
-
-}
-
-f.addEventListener('submit',function(e){
-
-e.preventDefault();
-
-var is50=parseFloat(document.getElementById('is50').value);
-
-var kplt=parseFloat(document.getElementById('kplt').value);
-
-var bts=parseFloat(document.getElementById('bts').value);
-
-var kbts=parseFloat(document.getElementById('kbts').value);
-
-var out=document.getElementById('calc-resultado');
-
-if(!isFinite(is50)||!isFinite(kplt)||!isFinite(bts)||!isFinite(kbts)||is50<0||bts<0||kplt<=0||kbts<=0){out.innerHTML='<span class="err">Insira valores numéricos válidos (≥0).</span>';return;}
-
-if(is50===0&&bts===0){out.innerHTML='<span class="err">Insira pelo menos um valor: Is50 ou BTS &gt; 0.</span>';return;}
-
-var ucsPLT=is50*kplt;
-
-var ucsBTS=bts*kbts;
-
-var prom=(is50>0&&bts>0)?((ucsPLT+ucsBTS)/2):(is50>0?ucsPLT:ucsBTS);
-
-out.innerHTML='<span class="ok">UCS (PLT) = '+ucsPLT.toFixed(1).replace('.',',')+' MPa · UCS (BTS) = '+ucsBTS.toFixed(1).replace('.',',')+' MPa</span>'+
-
-'UCS média usada para classificação: '+prom.toFixed(1).replace('.',',')+' MPa<br>'+
-
-'Classificação ISRM: <strong>'+isrm(prom)+'</strong><br>'+
-
-'<span style="color:#64748b;font-size:.85em">UCS = K·Is50 (K=22-24 típico) · UCS = K·BTS (K=10-15 típico). Ensaie em amostras de núcleo de Ø≥50 mm.</span>';
-
-});
-
-})();
-
-</script>
-
-
-
-<h2>Exemplo de cálculo</h2>
-
-<table class="ejemplo">
-
-<caption>Dados de entrada — sondagem granodiorito, Chuquicamata</caption>
-
-<thead><tr><th>Parâmetro</th><th>Valor</th></tr></thead>
-
-<tbody>
-
-<tr><td>Tipo de rocha</td><td>Granodiorito (K recomendado 22-24)</td></tr>
-
-<tr><td>Ensaio PLT — testemunho HQ</td><td>D = 63,5 mm, P = 45 kN</td></tr>
-
-<tr><td>Is (sem correção)</td><td>45/63,5² = 0,01116 kN/mm² = 11,16 MPa</td></tr>
-
-<tr><td>Fator F de correção</td><td>(63,5/50)^0,45 = 1,115</td></tr>
-
-<tr><td>Is50</td><td>1,115 · 11,16 = 12,44 MPa... Nota: usar fórmula direta com D em mm dá Is = 11,16 MPa; Is50 = F·Is = 12,4</td></tr>
-
-<tr><td>K adotado</td><td>22 (ISRM médio ígneas intrusivas)</td></tr>
-
-<tr><td>BTS comparativo</td><td>BTS = 12 MPa (ensaio paralelo)</td></tr>
-
-</tbody>
-
-</table>
-
-<p>UCS a partir do PLT: UCS = K · Is50 = 22 · 12,4 = 273 MPa. UCS a partir do BTS: UCS = 10 · BTS = 10 · 12 = 120 MPa (faixa típica 96-168 MPa com K=8-14). Há discrepância entre ambos os métodos (273 vs 120 MPa), comum em rochas com alta anisotropia ou microfissuração. Recomenda-se validar com 3-5 ensaios UCS diretos para ajustar K. Se os UCS diretos derem 180 MPa em média, o K real para este granodiorito seria K = 180/12,4 = 14,5 (menor que o ISRM), e futuras sondagens da mesma litologia podem ser estimadas com esse K calibrado. Em projetos grandes, é prática padrão calibrar K local.</p>
-
-<p class="resultado"><strong>Resultado:</strong> Is50 = 12,4 MPa · UCS (K=22) = 273 MPa · UCS (BTS) = 120 MPa. Recomenda-se calibrar K com UCS direto.</p>
-
-
-
-<h2>Interpretação dos resultados</h2>
-
-<p>UCS entre 120-270 MPa corresponde a rocha muito resistente (ISRM R5-R6). A dispersão entre métodos é típica — por isso a ISRM insiste em não usar K = 22-24 cegamente. Em mineração, recomenda-se calibrar K em cada jazida: por exemplo, K ≈ 18 reportado para pórfiros cupríferos andinos, menor que o ISRM genérico. Para caracterização preliminar, a estimativa com K ISRM é aceitável; para projeto definitivo, é necessário ensaiar UCS direto em pelo menos 10 % das amostras.</p>
-
-
-
-<h2>Normativas de referência</h2>
-
-<ul>
-
-<li>ABNT NBR + ASTM D5731 — Método de Ensaio Padrão para Determinação do Índice de Resistência à Carga Pontual de Rocha</li>
-
-<li>ABNT NBR + ASTM D3967 — Resistência à Tração por Compressão Diametral de Testemunhos de Rocha Intacta (Brasileiro)</li>
-
-<li>ABNT NBR + ASTM D7012 — Resistência à Compressão e Módulos Elásticos de Testemunhos de Rocha Intacta</li>
-
-<li>ISRM (1985). Método Sugerido para Determinação da Resistência à Carga Pontual</li>
-
-<li>Hoek, E. (2002). Engenharia de Rochas Prática (tabela K por litologia)</li>
-
-</ul>
-
-
-
-<h2>Perguntas frequentes</h2>
-
-<details><summary>Quando NÃO usar Is50 para estimar UCS?</summary><p>Em rochas anisotrópicas fortes (xistos, ardósias) o Is50 depende da orientação da carga em relação à foliação. Reportar Is50 paralelo e perpendicular separadamente. Em rochas muito fracas (UCS &lt; 25 MPa) a correlação falha porque a ruptura é por cisalhamento, não por tração induzida.</p></details>
-
-<details><summary>Como calibro K para meu projeto?</summary><p>Ensaie UCS direto em 10-20 testemunhos representativos e calcule K = UCS/Is50 para cada par. Tome a média geométrica. Diferenças maiores que ±25 % em relação ao ISRM requerem análise de dispersão; a média geométrica é mais robusta que a aritmética.</p></details>
-
-<details><summary>BTS é melhor que PLT?</summary><p>BTS requer discos bem cortados (caro, mais lento), mas é mais reprodutível. PLT é portátil e aceita fragmentos irregulares. Para produção massiva em mineração, prefere-se PLT; para ensaios definitivos, BTS + UCS. A correlação UCS/BTS tem menor dispersão que UCS/Is50 em rochas competentes.</p></details>
-
-<details><summary>Uso Is50 para o σci de Hoek-Brown?</summary><p>Hoek recomenda UCS direto sempre que possível. Se houver apenas PLT, usar σci = K·Is50 com K calibrado e reportá-lo como estimativa. Em alguns casos, Hoek sugere σci = 20·Is50 (mais conservador que ISRM). Nunca usar Is50 direto como σci.</p></details>
-
-
-
-<h2>Calculadoras relacionadas</h2>
-
-<ul>
-
-<li><a href="/">Hoek-Brown 2002 — maciço rochoso</a></li>
-
-<li><a href="/">Bishop simplificado</a></li>
-
-<li><a href="/">Cisalhamento direto c, φ</a></li>
-
-<li><a href="/">Capacidade de carga Terzaghi/Vesic</a></li>
-
-</ul>
-
-
-
-</article>
-
-
-
-
-
-<!-- AUTO-INTERNAL-LINKS -->
-
-<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
-
-  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Taludes e Maciços Rochosos</h3>
-
-  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
-
-      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora FS Talude — Bishop Simplificado</a></li>
-
-      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Cunha Rochosa — FS planar e falha em cunha</a></li>
-
-      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Estabilidade de Aterros — FS e altura crítica</a></li>
-
-      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora FS Talude Infinito — Encostas Extensas</a></li>
-
-  </ul>
-
-  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
-
-    Mais ferramentas em <a href="/" style="color:#0d9488">Taludes e Maciços Rochosos</a> · Voltar ao
-
-    <a href="/" style="color:#0d9488">índice de Geotecnia Brasil</a>
-
-  </p>
-
-</aside>
-
-</article>
-
-</main>
-
-<footer>
-
-<div class="container">
-
-<div>
-
-<h4>Geotecnia Brasil</h4>
-
-<p>Serviços geotécnicos profissionais (Brasil).</p>
-
-<p class="footer-designer-credit">Site projetado por equipe geotécnica</p>
-
-</div>
-
-<div>
-
-<h4>Contato</h4>
-
-<p>Email: <a href="/cdn-cgi/l/email-protection#53303c3d2732273c1334363c2736303d3a32312132203a3f7d303c3e"><span class="__cf_email__" data-cfemail="72111d1c0613061d3215171d0617111c1b13100013011b1e5c111d1f">[email&#160;protected]</span></a></p>
-
-</div>
-
-<div>
-
-<h4>Serviços</h4>
-
-<p><a href="/sondagem-spt/">Sondagem SPT</a><br><a href="/laboratorio-mecanica-solos/">Laboratório de Mecânica dos Solos</a><br><a href="/estabilidade-taludes/">Estabilidade de Taludes</a><br><a href="/projeto-muros-contencao/">Projeto de Muros de Contenção</a></p>
-
-</div>
-
-<div>
-
-<h4>Legal</h4>
-
-<p><a href="/sitemap.xml">Mapa do site</a></p>
-
-</div>
-
-<div class="copyr">© 2026 Geotecnia Brasil</div>
-
-</div>
-
-</footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://geotecniabrasil.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculadora UCS a partir de PLT (Is50) e BTS", "item": "https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/"}]}, {"@type": "Article", "headline": "Calculadora UCS a partir de PLT (Is50) e BTS", "inLanguage": "pt", "description": "A resistência à compressão uniaxial UCS é o parâmetro chave da rocha intacta nos critérios de Hoek-Brown, projeto de túneis, estabilidade de taludes e cara", "url": "https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/", "mainEntityOfPage": "https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/", "publisher": {"@type": "Organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/"}}]}</script>
-
-</body>
-
+<!doctype html>
+
+<html lang="pt">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Calculadora UCS a partir de PLT (Is50) e BTS | Geotecnia Brasil</title>
+
+<meta name="description" content="A resist�ncia � compress�o uniaxial UCS � o par�metro chave da rocha intacta nos crit�rios de Hoek-Brown, projeto de t�neis, estabilidade de taludes e cara">
+
+<meta name="theme-color" content="#0f3a3a">
+
+<link rel="canonical" href="https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Calculadora UCS a partir de PLT (Is50) e BTS">
+
+<meta property="og:description" content="Estudo geot�cnico para obras de infraestrutura, funda��es e conten��es. Cobertura nacional com laborat�rio pr�prio e equipe especializada.">
+
+<meta property="og:url" content="https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/">
+
+<meta property="og:site_name" content="Geotecnia Brasil">
+
+<meta property="og:image" content="https://geotecniabrasil.com/img/cimentaciones-superficiales-langpt-5.webp">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Calculadora UCS a partir de PLT (Is50) e BTS">
+
+<meta name="twitter:description" content="Estudo geot�cnico para obras de infraestrutura, funda��es e conten��es. Cobertura nacional com laborat�rio pr�prio e equipe especializada.">
+
+<meta name="twitter:image" content="https://geotecniabrasil.com/img/cimentaciones-superficiales-langpt-5.webp">
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230A2540'/%3E%3Cpath d='M14 44 L24 30 L34 38 L44 22 L50 28' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Geotecnia Brasil Brasil", "description": "Estudo geot�cnico para obras de infraestrutura, funda��es e conten��es. Cobertura nacional com laborat�rio pr�prio e equipe especializada.", "url": "https://geotecniabrasil.com/", "areaServed": {"@type": "City", "name": "Brasil"}, "address": {"@type": "PostalAddress", "addressLocality": "Brasil", "addressCountry": "Brasil"}, "email": "contato@geotecniabrasil.com", "priceRange": "$$"}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Estudo Geot�cnico � Estudo Geot�cnico e Sondagem SPT ? Brasil", "url": "https://geotecniabrasil.com/", "description": "Estudo geot�cnico para obras de infraestrutura, funda��es e conten��es. Cobertura nacional com laborat�rio pr�prio e equipe especializada.", "inLanguage": "pt", "datePublished": "2026-05-31", "dateModified": "2026-05-31", "isPartOf": {"@type": "WebSite", "url": "https://geotecniabrasil.com/", "name": "Geotecnia Brasil"}}</script>
+
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://geotecniabrasil.com/#organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/", "logo": "https://geotecniabrasil.com/img/logo.png", "email": "contato@geotecniabrasil.com", "address": {"@type": "PostalAddress", "addressCountry": "Brasil"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 38, "bestRating": 5, "worstRating": 1}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://geotecniabrasil.com/#website", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/", "inLanguage": "pt", "publisher": {"@id": "https://geotecniabrasil.com/#organization"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://geotecniabrasil.com/?s={search_term_string}"}, "query-input": "required name=search_term_string"}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual a profundidade m�nima exigida para um estudo geot�cnico?", "acceptedAnswer": {"@type": "Answer", "text": "A profundidade deve atingir pelo menos 3 metros abaixo do n�vel previsto da funda��o, ou at� encontrar camada resistente, conforme NBR 6484."}}, {"@type": "Question", "name": "Como a sazonalidade das chuvas afeta os par�metros do solo?", "acceptedAnswer": {"@type": "Answer", "text": "Solos n�o saturados podem perder resist�ncia com o aumento da umidade. Ensaios de laborat�rio devem simular as condi��es cr�ticas de satura��o."}}, {"@type": "Question", "name": "O estudo geot�cnico � obrigat�rio para todas as obras?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, a NBR 6122 exige investiga��o geot�cnica para qualquer obra de funda��o, independentemente do porte."}}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://geotecniabrasil.com/equipo/ricardo-albuquerque/#person", "name": "Ricardo Albuquerque", "jobTitle": "Engenheiro Geot�cnico S�nior", "image": "https://geotecniabrasil.com/img/headshot_intl_geotecniabrasil-com.webp", "worksFor": {"@type": "Organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com"}, "url": "https://geotecniabrasil.com/equipo/ricardo-albuquerque/"}</script>
+
+
+
+<meta name="layout" content="L3">
+
+<link rel="preload" as="image" href="img/cimentaciones-superficiales-langpt-5.webp" fetchpriority="high">
+
+<style>
+
+
+
+:root{
+
+  --primary:#0f3a3a;
+
+  --accent:#10b981;
+
+  --bg:#f7fafa;
+
+  --surface:#fff;
+
+  --text:#1a2122;
+
+  --border:#e2e8e7;
+
+  --muted:#64748b;
+
+  --font-body:'Inter',-apple-system,sans-serif;
+
+  --font-h:'Lora',Georgia,serif;
+
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{font-family:var(--font-body);line-height:1.65;color:var(--text);background:var(--bg)}
+
+a{color:var(--primary);text-decoration:none}
+
+a:hover{text-decoration:underline}
+
+/* Prose links ? links dentro del contenido principal SIEMPRE visibles (underline + accent) */
+
+main section.block p a, main section.block li a, .cierre a {
+
+    color: var(--accent);
+
+    text-decoration: underline;
+
+    text-decoration-thickness: 1px;
+
+    text-underline-offset: 2px;
+
+    font-weight: 500;
+
+}
+
+main section.block p a:hover, main section.block li a:hover, .cierre a:hover {
+
+    text-decoration-thickness: 2px;
+
+    color: var(--primary);
+
+}
+
+.container{max-width:1400px;margin:0 auto;padding:0 24px}
+
+header{background:var(--primary);color:#fff;padding:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+
+header .container{display:flex;align-items:center;justify-content:space-between;gap:20px}
+
+header .brand-link{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+
+header .brand-link:hover{text-decoration:none}
+
+header .logo{flex-shrink:0;filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))}
+
+header .brand-line{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;line-height:1.1}
+
+header .brand-name{font-family:var(--font-h);font-size:1.18rem;font-weight:700;letter-spacing:.02em;color:#fff}
+
+header .brand-sep{color:#64748b;font-weight:300}
+
+header .brand-sub{font-size:.78rem;font-weight:400;color:#cbd5e1;letter-spacing:.02em}
+
+@media(max-width:560px){header .brand-sep,header .brand-sub{display:none}}
+
+header .navbar{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+
+header .nav-link{color:#e2e8f0;padding:8px 14px;border-radius:6px;font-size:.92rem;font-weight:500;transition:background .15s,color .15s;text-decoration:none;background:transparent;border:none;cursor:pointer;font-family:inherit;display:inline-flex;align-items:center;gap:4px}
+
+header .nav-link:hover,header .nav-link[aria-expanded="true"]{background:rgba(255,255,255,.1);color:#fff;text-decoration:none}
+
+header .nav-dd{position:relative}
+
+header .dd-arrow{font-size:.7rem;opacity:.8;transition:transform .15s}
+
+header .nav-link[aria-expanded="true"] .dd-arrow{transform:rotate(180deg)}
+
+header .dd-menu{position:absolute;top:calc(100% + 6px);left:0;background:#fff;min-width:240px;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:6px 0;display:none;z-index:1000;border:1px solid rgba(0,0,0,.06)}
+
+header .nav-dd.open .dd-menu{display:block}
+
+header .dd-menu a{display:block;padding:10px 18px;color:#1f2937;font-size:.92rem;text-decoration:none;transition:background .12s}
+
+header .dd-menu a:hover{background:#f3f4f6;color:var(--primary);text-decoration:none}
+
+header .dd-menu a{display:flex!important;align-items:center;justify-content:space-between;gap:14px}
+
+header .hub-badge{display:inline-block;background:color-mix(in srgb, var(--accent) 18%, #fff 82%);color:var(--primary);font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:11px;line-height:1.4}
+
+header .nav-burger{display:none;background:transparent;border:1px solid rgba(255,255,255,.2);color:#fff;padding:6px 12px;border-radius:6px;font-size:1.1rem;cursor:pointer}
+
+@media(max-width:780px){
+
+  header .container{flex-wrap:wrap}
+
+  header .nav-burger{display:inline-block}
+
+  header .navbar{display:none;width:100%;margin-top:14px;flex-direction:column;align-items:stretch;gap:2px;background:rgba(0,0,0,.15);padding:10px;border-radius:8px}
+
+  body.nav-open header .navbar{display:flex}
+
+  header .nav-dd{width:100%}
+
+  header .dd-menu{position:static;box-shadow:none;background:rgba(255,255,255,.04);border:none;padding:0;margin-top:4px}
+
+  header .dd-menu a{color:#e2e8f0;padding:8px 18px}
+
+  header .dd-menu a:hover{background:rgba(255,255,255,.08);color:#fff}
+
+}
+
+.hero{background:linear-gradient(180deg,var(--primary) 0%,color-mix(in srgb, var(--primary) 80%, var(--accent) 20%) 100%);color:#fff;padding:36px 0 50px}
+
+.hero h1{font-family:var(--font-h);font-size:2.1rem;line-height:1.25;font-weight:700;margin-bottom:12px;max-width:1280px}
+
+.hero p.subtitle{font-size:1.05rem;color:#cbd5e1;max-width:1100px;margin-bottom:18px}
+
+.breadcrumb{padding:0 0 14px;font-size:.85rem;color:#cbd5e1;background:transparent;border:none}
+
+.breadcrumb a{color:#93c5fd;text-decoration:none}
+
+.breadcrumb a:hover{color:#fff;text-decoration:underline}
+
+.breadcrumb span{color:#fff;font-weight:500}
+
+.block{background:var(--surface);border-radius:10px;padding:26px 30px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid var(--border);overflow:hidden}
+
+.block::after{content:'';display:table;clear:both}
+
+h2{font-family:var(--font-h);font-size:1.45rem;color:var(--primary);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+
+h3{font-family:var(--font-h);font-size:1.1rem;color:var(--primary);margin:14px 0 8px;font-weight:600}
+
+p{margin-bottom:12px;color:var(--text)}
+
+/* hero/inline img v3 ? float right + cap dimensiones (anti-explotaci�n portrait) */
+
+section.block{overflow:auto}
+
+section.block .hero-img-wrap{float:right;max-width:340px;width:340px;max-height:280px;margin:6px 0 16px 24px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10);display:block}
+
+section.block .hero-img-wrap img{max-width:100%;max-height:280px;width:100%;height:280px;object-fit:cover;display:block;border-radius:10px}
+
+.inline-img{float:right;max-width:300px;width:300px;max-height:220px;margin:6px 0 18px 20px;overflow:hidden;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.10)}
+
+.inline-img img{max-width:100%;max-height:220px;width:100%;height:220px;object-fit:cover;display:block;border-radius:10px}
+
+section.block h2{clear:both;margin-top:0}
+
+@media (max-width:768px){
+
+  section.block{overflow:visible}
+
+  section.block .hero-img-wrap{float:none;width:100%;max-width:100%;max-height:240px;margin:18px auto}
+
+  section.block .hero-img-wrap img{height:240px;max-height:240px}
+
+  .inline-img{float:none;width:100%;max-width:100%;max-height:220px;margin:18px auto}
+
+}
+
+main img:not([class]){max-width:100%;height:auto}
+
+@media(max-width:680px){.inline-img{float:none;width:100%;max-width:100%;margin:18px auto}}
+
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95rem;border-radius:6px;overflow:hidden}
+
+table th{background:var(--primary);color:#fff;padding:12px 14px;text-align:left;font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+
+table td{padding:10px 14px;border-bottom:1px solid var(--border)}
+
+table tr:nth-child(even) td{background:color-mix(in srgb, var(--bg) 50%, #f8fafc 50%)}
+
+.norm-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+
+.norm-list li{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);color:var(--primary);padding:8px 14px;border-radius:6px;border-left:3px solid var(--primary);font-family:ui-monospace,monospace;font-size:.92rem}
+
+.faq details{background:color-mix(in srgb, var(--bg) 60%, #f8fafc 40%);padding:14px 18px;margin-bottom:8px;border-radius:8px;border-left:3px solid var(--primary)}
+
+.faq summary{font-weight:600;cursor:pointer;color:var(--primary);font-size:1.02rem;list-style:none}
+
+.faq summary::-webkit-details-marker{display:none}
+
+.faq summary::after{content:'+';float:right;font-size:1.4rem;line-height:1;color:var(--muted)}
+
+.faq details[open] summary::after{content:'?'}
+
+.faq details[open] p{margin-top:12px;color:var(--text)}
+
+#mapa-ciudad{height:340px;border-radius:8px;border:1px solid var(--border);z-index:1}
+
+.sidebar h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px;font-weight:600}
+
+.sidebar ul{list-style:none}
+
+.sidebar li{margin-bottom:6px}
+
+.sidebar a{color:var(--primary);font-size:.93rem;display:block;padding:8px 10px;border-radius:5px;transition:background .12s}
+
+.sidebar a:hover{background:color-mix(in srgb, var(--accent) 10%, #fff 90%);text-decoration:none}
+
+.cierre{background:color-mix(in srgb, var(--accent) 8%, #fff 92%);padding:20px 26px;border-radius:8px;border-left:4px solid var(--primary);margin-top:24px;color:var(--text);font-style:italic}
+
+.author-byline{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--primary);padding:14px 18px;border-radius:8px;display:flex;align-items:center;gap:14px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+
+.author-byline img{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--border)}
+
+.author-byline .author-info{flex:1;min-width:0}
+
+.author-byline .author-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
+.author-byline .author-name{font-size:1rem;font-weight:700;color:var(--primary);display:block;text-decoration:none;line-height:1.3}
+
+.author-byline .author-title{font-size:.82rem;color:var(--muted);margin-top:2px}
+
+.author-byline .author-date{font-size:.72rem;color:var(--muted);text-align:right;line-height:1.5;flex-shrink:0}
+
+@media(max-width:560px){.author-byline{flex-wrap:wrap}.author-byline .author-date{text-align:left;width:100%;margin-top:8px;border-top:1px solid var(--border);padding-top:8px}}
+
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+
+.service-card{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;background:var(--bg);border-radius:8px;border:1px solid var(--border);text-decoration:none;color:var(--primary);transition:transform .15s,box-shadow .15s,border-color .15s}
+
+.service-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.08);border-color:var(--accent);text-decoration:none}
+
+.service-card .card-title{font-weight:600;font-size:1.02rem}
+
+.service-card .card-arrow{font-size:1.3rem;color:var(--accent)}
+
+.sat-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+
+.sat-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 7%, #fff 93%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s}
+
+.sat-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+
+.sat-to-hub{display:flex;align-items:center;justify-content:space-between;gap:14px;background:color-mix(in srgb, var(--primary) 6%, #fff 94%);border-left:4px solid var(--primary);padding:14px 22px;border-radius:6px;margin:0 0 22px;font-size:.95rem;flex-wrap:wrap}
+
+.sat-to-hub-label{color:var(--text)}
+
+.sat-to-hub-link{color:var(--primary);font-weight:600;text-decoration:none;white-space:nowrap}
+
+.sat-to-hub-link:hover{text-decoration:underline}
+
+.cta-block,section.block.cta-block{background:linear-gradient(135deg, var(--primary) 0%, color-mix(in srgb, var(--primary) 70%, var(--accent) 30%) 100%)!important;color:#fff!important;border:none!important;padding:36px 40px!important;text-align:center!important;border-radius:12px!important;box-shadow:0 4px 18px rgba(0,0,0,.12)!important;margin:32px auto!important;border-top:none!important;max-width:760px!important}
+
+.cta-block .cta-inner{margin:0 auto;max-width:600px;text-align:center}
+
+@media(max-width:900px){.cta-block,section.block.cta-block{max-width:100%!important}}
+
+.cta-block h2,section.block.cta-block h2{color:#fff!important;border-bottom:none!important;padding-bottom:0!important;font-size:1.55rem!important;margin-bottom:10px!important;text-shadow:0 1px 2px rgba(0,0,0,.15)!important}
+
+.cta-block h2::after,section.block.cta-block h2::after{display:none!important;content:none!important}
+
+.cta-block p,section.block.cta-block p{color:#e2e8f0!important;margin-bottom:18px!important;font-size:1rem!important;max-width:none!important}
+
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+
+.cta-wa,.cta-email{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .12s,box-shadow .12s}
+
+.cta-wa{background:#25d366;color:#fff}
+
+.cta-wa:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,.4);text-decoration:none}
+
+.cta-email{background:#fff;color:var(--primary)}
+
+.cta-email:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.2);text-decoration:none}
+
+.cta-email-note{font-size:.85rem;color:#cbd5e1;margin-top:8px;margin-bottom:0}
+
+.cta-email-note a{color:#93c5fd}
+
+.cta-email-note a:hover{color:#fff}
+
+/* Cities chips (S4) ? internal linking bottom-of-page */
+
+.city-chips-section{margin:30px auto 24px;max-width:1200px}
+
+.city-chips-section > h2{font-family:var(--font-h);font-size:1.35rem;color:var(--primary);margin-bottom:18px;padding-bottom:8px;border-bottom:2px solid var(--border);font-weight:700}
+
+.city-chips-zone{margin-bottom:18px}
+
+.city-chips-zone:last-child{margin-bottom:0}
+
+.city-chips-zone-title{font-family:var(--font-h);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px;font-weight:700;border:none;padding:0}
+
+.city-chips-row{display:flex;flex-wrap:wrap;gap:8px}
+
+.city-chip{display:inline-flex;align-items:center;padding:7px 14px;background:color-mix(in srgb, var(--accent) 6%, #fff 94%);border:1px solid var(--border);border-radius:18px;color:var(--primary);font-size:.9rem;text-decoration:none;transition:background .12s,border-color .12s,transform .12s,box-shadow .12s;font-weight:500;line-height:1.2;white-space:nowrap}
+
+.city-chip:hover{background:color-mix(in srgb, var(--accent) 14%, #fff 86%);border-color:var(--accent);color:var(--primary);text-decoration:none;transform:translateY(-1px);box-shadow:0 2px 6px rgba(0,0,0,.06)}
+
+@media(max-width:560px){.city-chip{font-size:.85rem;padding:6px 12px}}
+
+footer{background:var(--primary);color:#cbd5e1;padding:36px 0;margin-top:50px}
+
+footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;align-items:start}
+
+footer h4{color:#fff;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+
+footer p,footer a{color:#cbd5e1;font-size:.88rem;line-height:1.7}
+
+footer a:hover{color:#fff}
+
+footer .copyr{grid-column:1/-1;border-top:1px solid color-mix(in srgb, var(--primary) 60%, #fff 40%);padding-top:18px;text-align:center;color:#94a3b8;font-size:.82rem}
+
+footer .footer-designer-credit{color:#94a3b8;font-size:.78rem;margin-top:8px;font-style:italic}
+
+
+
+
+
+.mag-layout{padding:42px 24px;max-width:1320px;margin:0 auto}
+
+.mag-layout main{min-width:0}
+
+.mag-layout h1{font-size:2.8rem!important;line-height:1.15;letter-spacing:-.02em;font-weight:800}
+
+.mag-layout .block{padding:30px 40px;background:transparent;border:none;border-top:1px solid var(--border);border-radius:0;box-shadow:none;margin-bottom:0}
+
+.mag-layout .block:first-child{border-top:none}
+
+.mag-layout h2{font-size:1.6rem;border-bottom:none;padding-bottom:0}
+
+.mag-layout p:first-of-type{font-size:1.08rem;line-height:1.7;color:var(--text)}
+
+/* drop-cap REMOVIDO 2026-05-27 (user feedback) ? afectaba a todos los p�rrafos de cards/bloques */
+
+
+
+</style>
+
+
+
+<link rel="stylesheet" href="/calc-scoped.css">
+
+<style id="ftr-fix">footer .container>div{min-width:0}footer p,footer a{overflow-wrap:anywhere;word-break:break-word}</style><style id="selfhost-fonts">body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}</style></head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<a class="brand-link" href="/">
+
+<svg class="logo" width="38" height="38" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+  <defs>
+
+    <linearGradient id="lg656" x1="0" y1="0" x2="1" y2="1">
+
+      <stop offset="0%" stop-color="var(--accent)"/>
+
+      <stop offset="100%" stop-color="var(--primary)"/>
+
+    </linearGradient>
+
+  </defs>
+
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="url(#lg656)"/>
+
+  <path d="M14 44 L24 30 L34 38 L44 22 L50 28" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="24" cy="30" r="3" fill="#fff"/>
+
+  <circle cx="34" cy="38" r="3" fill="#fff"/>
+
+  <circle cx="44" cy="22" r="3" fill="#fff"/>
+
+</svg>
+
+<div class="brand-line">
+
+  <span class="brand-name">Geotecnia Brasil</span>
+
+  <span class="brand-sep">�</span>
+
+  <span class="brand-sub">Engenharia Geot�cnica</span>
+
+</div>
+
+</a>
+
+<nav class="navbar" aria-label="principal">
+
+<a href="/" class="nav-link">In�cio</a><a class="nav-link" href="/calculadoras/">Calculadoras</a>
+
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Servi�os<span class="dd-arrow">?</span></button><div class="dd-menu" role="menu"><a href="/sondagem-spt/" role="menuitem">Sondagem SPT</a><a href="/laboratorio-mecanica-solos/" role="menuitem">Laborat�rio de Mec�nica dos Solos</a><a href="/estabilidade-taludes/" role="menuitem">Estabilidade de Taludes</a><a href="/projeto-muros-contencao/" role="menuitem">Projeto de Muros de Conten��o</a></div></div>
+
+<div class="nav-dd"><button class="nav-link nav-toggle" aria-haspopup="true" aria-expanded="false">Cobertura<span class="dd-arrow">?</span></button><div class="dd-menu" role="menu"><a href="/estudo-geotecnico-em-sao-paulo/" role="menuitem" class="hub-main"><strong>Sao Paulo</strong></a><a href="/estudo-geotecnico-em-rio-de-janeiro/" role="menuitem" class="hub-main"><strong>Rio De Janeiro</strong></a><a href="/estudo-geotecnico-em-brasilia/" role="menuitem" class="hub-main"><strong>Brasilia</strong></a><a href="/estudo-geotecnico-em-salvador/" role="menuitem" class="hub-main"><strong>Salvador</strong></a><a href="/estudo-geotecnico-em-fortaleza/" role="menuitem" class="hub-main"><strong>Fortaleza</strong></a><a href="/estudo-geotecnico-em-belo-horizonte/" role="menuitem" class="hub-main"><strong>Belo Horizonte</strong></a><a href="/estudo-geotecnico-em-manaus/" role="menuitem" class="hub-main"><strong>Manaus</strong></a><a href="/estudo-geotecnico-em-curitiba/" role="menuitem" class="hub-main"><strong>Curitiba</strong></a><a href="/estudo-geotecnico-em-recife/" role="menuitem" class="hub-main"><strong>Recife</strong></a><a href="/estudo-geotecnico-em-porto-alegre/" role="menuitem" class="hub-main"><strong>Porto Alegre</strong></a></div></div>
+
+<a href="/equipo/ricardo-albuquerque/" class="nav-link">Equipe</a>
+
+</nav>
+
+<button class="nav-burger" aria-label="men�" onclick="document.body.classList.toggle('nav-open')">?</button>
+
+</div>
+
+</header>
+
+<main>
+
+<nav aria-label="breadcrumb" style="max-width:900px;margin:1.4rem auto 0;padding:0 1.5rem;font-size:.85rem;color:#64748b"><a href="/" style="color:inherit;text-decoration:none">In�cio</a> &rsaquo; <span>Calculadora UCS a partir de PLT (Is50) e BTS</span></nav>
+
+<article class="calc-scope" style="max-width:900px;margin:0 auto;padding:1.5rem">
+
+<h1>Calculadora UCS a partir de PLT (Is50) e BTS</h1>
+
+
+
+<p class="lead">A resist�ncia � compress�o uniaxial UCS � o par�metro chave da rocha intacta nos crit�rios de Hoek-Brown, projeto de t�neis, estabilidade de taludes e caracteriza��o geot�cnica. No entanto, os ensaios UCS em prensa requerem testemunhos de alta qualidade e s�o caros. O ensaio de Carga Pontual (PLT) fornece o Is50 em fragmentos irregulares ou testemunhos curtos com equipamento port�til, e o ensaio Brasileiro (BTS) fornece a resist�ncia � tra��o indireta. Esta calculadora aplica as correla��es ISRM e K espec�ficos por litologia para converter Is50 e BTS em UCS equivalente, economizando ensaios UCS onde a correla��o � confi�vel.</p>
+
+
+
+<h2>O que s�o PLT e BTS?</h2>
+
+<p>PLT (Ensaio de Carga Pontual, ABNT NBR + ASTM D5731) carrega um testemunho entre duas pontas c�nicas at� a ruptura e reporta-se o Is50 (�ndice corrigido para D = 50 mm). BTS (Resist�ncia � Tra��o Brasileira, ABNT NBR + ASTM D3967) aplica carga diametral sobre um disco de rocha para induzir tra��o indireta. Ambos s�o ensaios r�pidos, port�teis e econ�micos comparados ao UCS em prensa MTS. S�o usados para caracteriza��o massiva de sondagens, controle de qualidade em minera��o e estimativa de ?ci para Hoek-Brown. A norma ISRM recomenda complementar com UCS direto em amostras representativas.</p>
+
+
+
+<h2>F�rmulas aplicadas</h2>
+
+<div class="formulas">
+
+<p><strong>PLT ? Is50 corrigido:</strong></p>
+
+<p>Is = P / De�; De = di�metro equivalente (testemunho ou fragmento)</p>
+
+<p>Is50 = F � Is, com F = (De/50)^0,45 (corre��o por tamanho)</p>
+
+<p><strong>Correla��o UCS-Is50 (ISRM):</strong></p>
+
+<p>UCS = K � Is50, com K t�pico = 22-24 (recomenda��o ISRM para rochas gen�ricas)</p>
+
+<p>Valores espec�ficos: K = 14-24 sedimentares (arenito, calc�rio); K = 15-22 �gneas extrusivas; K = 18-28 �gneas intrusivas; K = 10-14 metam�rficas xistosas</p>
+
+<p><strong>BTS ? resist�ncia � tra��o:</strong></p>
+
+<p>?t = 2P / (?�D�t), com P carga de ruptura, D di�metro, t espessura do disco</p>
+
+<p><strong>Correla��o UCS-BTS:</strong></p>
+
+<p>UCS ? 8-14 � BTS (faixa t�pica; ISRM sugere 10)</p>
+
+<p><strong>Crit�rio de ensaio v�lido PLT (ABNT NBR + ASTM D5731):</strong> ruptura sim�trica atrav�s do eixo de carga, n�o por fissuras pr�-existentes</p>
+
+</div>
+
+
+
+<div class="calc-split-layout">
+
+<section class="calc-widget" aria-label="Calculadora UCS a partir de Is50 e BTS">
+
+<h2>Calcular online</h2>
+
+<p class="calc-intro">UCS estimado a partir do Point Load Is50 (ABNT NBR + ASTM D5731) e/ou BTS (ensaio brasileiro ABNT NBR + ASTM D3967). Classifica��o ISRM R1-R6 autom�tica.</p>
+
+<form id="calc-form" novalidate>
+
+<div class="calc-row">
+
+<label>Is50 Carga Pontual (MPa)<input type="number" id="is50" step="0.1" value="4" min="0" max="30" required></label>
+
+<label>K (Is50?UCS)<input type="number" id="kplt" step="0.5" value="23" min="10" max="30" required></label>
+
+<label>BTS resist�ncia � tra��o (MPa)<input type="number" id="bts" step="0.1" value="8" min="0" max="50" required></label>
+
+<label>K (BTS?UCS)<input type="number" id="kbts" step="0.5" value="12" min="8" max="16" required></label>
+
+</div>
+
+<button type="submit">Calcular UCS</button>
+
+</form>
+
+<div id="calc-resultado" role="status" aria-live="polite"></div>
+
+<p class="calc-note">Valores K referenciais: PLT 22-24 (m�dia 23); BTS 10 (fr�gil) a 12-15 (m�dia). ISRM: R1 &lt;5 � R2 5-25 � R3 25-50 � R4 50-100 � R5 100-250 � R6 &gt;250 MPa.</p>
+
+</section>
+
+
+
+<aside class="visor-normas-aside" aria-label="Marco normativo aplic�vel">
+
+<button type="button" class="visor-mobile-toggle" aria-controls="visor-normas" aria-expanded="false">? Ver marco normativo</button>
+
+<div id="visor-normas" class="visor-normas-panel"></div>
+
+</aside>
+
+</div>
+
+<script src="/widgets/visor-normas.js" data-slug="ucs-plt-bts"></script>
+
+<script>
+
+(function(){var btn=document.querySelector('.visor-mobile-toggle');var panel=document.getElementById('visor-normas');if(!btn||!panel)return;btn.addEventListener('click',function(){var isOpen=panel.classList.toggle('vn-mobile-open');btn.setAttribute('aria-expanded',isOpen?'true':'false');btn.textContent=isOpen?'? Fechar marco normativo':'? Ver marco normativo';});})();
+
+</script>
+
+<style>
+
+.calc-widget{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:2rem 0;font-family:inherit}
+
+.calc-widget h2{margin:0 0 .5rem;font-size:1.15rem;color:#0f172a;border:0;padding:0}
+
+.calc-widget .calc-intro{margin:0 0 1rem;font-size:.88rem;color:#475569}
+
+.calc-widget .calc-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;margin-bottom:1rem}
+
+.calc-widget label{display:flex;flex-direction:column;font-size:.82rem;color:#334155;font-weight:600}
+
+.calc-widget input,.calc-widget select{margin-top:.3rem;padding:.5rem .6rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.92rem;font-family:inherit;background:#fff}
+
+.calc-widget input:focus,.calc-widget select:focus{outline:2px solid #0f766e;outline-offset:1px}
+
+.calc-widget button{background:#0f766e;color:#fff;border:0;padding:.6rem 1.4rem;border-radius:6px;font-weight:600;cursor:pointer;font-size:.92rem}
+
+.calc-widget button:hover{background:#115e59}
+
+.calc-widget #calc-resultado{margin-top:1rem;padding:.9rem 1rem;background:#fff;border-left:3px solid #0f766e;border-radius:4px;font-size:.92rem;min-height:1em}
+
+.calc-widget #calc-resultado:empty{display:none}
+
+.calc-widget #calc-resultado .ok{color:#166534;font-weight:700;font-size:1.02rem;display:block;margin-bottom:.3rem}
+
+.calc-widget #calc-resultado .err{color:#b91c1c;font-weight:600}
+
+.calc-widget .calc-note{margin:1rem 0 0;font-size:.78rem;color:#64748b;font-style:italic}
+
+</style>
+
+<script>
+
+(function(){
+
+var f=document.getElementById('calc-form');if(!f)return;
+
+function isrm(u){
+
+if(u<5)return 'R1 (muito fraca)';
+
+if(u<25)return 'R2 (fraca)';
+
+if(u<50)return 'R3 (medianamente resistente)';
+
+if(u<100)return 'R4 (resistente)';
+
+if(u<250)return 'R5 (muito resistente)';
+
+return 'R6 (extremamente resistente)';
+
+}
+
+f.addEventListener('submit',function(e){
+
+e.preventDefault();
+
+var is50=parseFloat(document.getElementById('is50').value);
+
+var kplt=parseFloat(document.getElementById('kplt').value);
+
+var bts=parseFloat(document.getElementById('bts').value);
+
+var kbts=parseFloat(document.getElementById('kbts').value);
+
+var out=document.getElementById('calc-resultado');
+
+if(!isFinite(is50)||!isFinite(kplt)||!isFinite(bts)||!isFinite(kbts)||is50<0||bts<0||kplt<=0||kbts<=0){out.innerHTML='<span class="err">Insira valores num�ricos v�lidos (?0).</span>';return;}
+
+if(is50===0&&bts===0){out.innerHTML='<span class="err">Insira pelo menos um valor: Is50 ou BTS &gt; 0.</span>';return;}
+
+var ucsPLT=is50*kplt;
+
+var ucsBTS=bts*kbts;
+
+var prom=(is50>0&&bts>0)?((ucsPLT+ucsBTS)/2):(is50>0?ucsPLT:ucsBTS);
+
+out.innerHTML='<span class="ok">UCS (PLT) = '+ucsPLT.toFixed(1).replace('.',',')+' MPa � UCS (BTS) = '+ucsBTS.toFixed(1).replace('.',',')+' MPa</span>'+
+
+'UCS m�dia usada para classifica��o: '+prom.toFixed(1).replace('.',',')+' MPa<br>'+
+
+'Classifica��o ISRM: <strong>'+isrm(prom)+'</strong><br>'+
+
+'<span style="color:#64748b;font-size:.85em">UCS = K�Is50 (K=22-24 t�pico) � UCS = K�BTS (K=10-15 t�pico). Ensaie em amostras de n�cleo de �?50 mm.</span>';
+
+});
+
+})();
+
+</script>
+
+
+
+<h2>Exemplo de c�lculo</h2>
+
+<table class="ejemplo">
+
+<caption>Dados de entrada ? sondagem granodiorito, Chuquicamata</caption>
+
+<thead><tr><th>Par�metro</th><th>Valor</th></tr></thead>
+
+<tbody>
+
+<tr><td>Tipo de rocha</td><td>Granodiorito (K recomendado 22-24)</td></tr>
+
+<tr><td>Ensaio PLT ? testemunho HQ</td><td>D = 63,5 mm, P = 45 kN</td></tr>
+
+<tr><td>Is (sem corre��o)</td><td>45/63,5� = 0,01116 kN/mm� = 11,16 MPa</td></tr>
+
+<tr><td>Fator F de corre��o</td><td>(63,5/50)^0,45 = 1,115</td></tr>
+
+<tr><td>Is50</td><td>1,115 � 11,16 = 12,44 MPa... Nota: usar f�rmula direta com D em mm d� Is = 11,16 MPa; Is50 = F�Is = 12,4</td></tr>
+
+<tr><td>K adotado</td><td>22 (ISRM m�dio �gneas intrusivas)</td></tr>
+
+<tr><td>BTS comparativo</td><td>BTS = 12 MPa (ensaio paralelo)</td></tr>
+
+</tbody>
+
+</table>
+
+<p>UCS a partir do PLT: UCS = K � Is50 = 22 � 12,4 = 273 MPa. UCS a partir do BTS: UCS = 10 � BTS = 10 � 12 = 120 MPa (faixa t�pica 96-168 MPa com K=8-14). H� discrep�ncia entre ambos os m�todos (273 vs 120 MPa), comum em rochas com alta anisotropia ou microfissura��o. Recomenda-se validar com 3-5 ensaios UCS diretos para ajustar K. Se os UCS diretos derem 180 MPa em m�dia, o K real para este granodiorito seria K = 180/12,4 = 14,5 (menor que o ISRM), e futuras sondagens da mesma litologia podem ser estimadas com esse K calibrado. Em projetos grandes, � pr�tica padr�o calibrar K local.</p>
+
+<p class="resultado"><strong>Resultado:</strong> Is50 = 12,4 MPa � UCS (K=22) = 273 MPa � UCS (BTS) = 120 MPa. Recomenda-se calibrar K com UCS direto.</p>
+
+
+
+<h2>Interpreta��o dos resultados</h2>
+
+<p>UCS entre 120-270 MPa corresponde a rocha muito resistente (ISRM R5-R6). A dispers�o entre m�todos � t�pica ? por isso a ISRM insiste em n�o usar K = 22-24 cegamente. Em minera��o, recomenda-se calibrar K em cada jazida: por exemplo, K ? 18 reportado para p�rfiros cupr�feros andinos, menor que o ISRM gen�rico. Para caracteriza��o preliminar, a estimativa com K ISRM � aceit�vel; para projeto definitivo, � necess�rio ensaiar UCS direto em pelo menos 10 % das amostras.</p>
+
+
+
+<h2>Normativas de refer�ncia</h2>
+
+<ul>
+
+<li>ABNT NBR + ASTM D5731 ? M�todo de Ensaio Padr�o para Determina��o do �ndice de Resist�ncia � Carga Pontual de Rocha</li>
+
+<li>ABNT NBR + ASTM D3967 ? Resist�ncia � Tra��o por Compress�o Diametral de Testemunhos de Rocha Intacta (Brasileiro)</li>
+
+<li>ABNT NBR + ASTM D7012 ? Resist�ncia � Compress�o e M�dulos El�sticos de Testemunhos de Rocha Intacta</li>
+
+<li>ISRM (1985). M�todo Sugerido para Determina��o da Resist�ncia � Carga Pontual</li>
+
+<li>Hoek, E. (2002). Engenharia de Rochas Pr�tica (tabela K por litologia)</li>
+
+</ul>
+
+
+
+<h2>Perguntas frequentes</h2>
+
+<details><summary>Quando N�O usar Is50 para estimar UCS?</summary><p>Em rochas anisotr�picas fortes (xistos, ard�sias) o Is50 depende da orienta��o da carga em rela��o � folia��o. Reportar Is50 paralelo e perpendicular separadamente. Em rochas muito fracas (UCS &lt; 25 MPa) a correla��o falha porque a ruptura � por cisalhamento, n�o por tra��o induzida.</p></details>
+
+<details><summary>Como calibro K para meu projeto?</summary><p>Ensaie UCS direto em 10-20 testemunhos representativos e calcule K = UCS/Is50 para cada par. Tome a m�dia geom�trica. Diferen�as maiores que �25 % em rela��o ao ISRM requerem an�lise de dispers�o; a m�dia geom�trica � mais robusta que a aritm�tica.</p></details>
+
+<details><summary>BTS � melhor que PLT?</summary><p>BTS requer discos bem cortados (caro, mais lento), mas � mais reprodut�vel. PLT � port�til e aceita fragmentos irregulares. Para produ��o massiva em minera��o, prefere-se PLT; para ensaios definitivos, BTS + UCS. A correla��o UCS/BTS tem menor dispers�o que UCS/Is50 em rochas competentes.</p></details>
+
+<details><summary>Uso Is50 para o ?ci de Hoek-Brown?</summary><p>Hoek recomenda UCS direto sempre que poss�vel. Se houver apenas PLT, usar ?ci = K�Is50 com K calibrado e report�-lo como estimativa. Em alguns casos, Hoek sugere ?ci = 20�Is50 (mais conservador que ISRM). Nunca usar Is50 direto como ?ci.</p></details>
+
+
+
+<h2>Calculadoras relacionadas</h2>
+
+<ul>
+
+<li><a href="/">Hoek-Brown 2002 ? maci�o rochoso</a></li>
+
+<li><a href="/">Bishop simplificado</a></li>
+
+<li><a href="/">Cisalhamento direto c, ?</a></li>
+
+<li><a href="/">Capacidade de carga Terzaghi/Vesic</a></li>
+
+</ul>
+
+
+
+</article>
+
+
+
+
+
+<!-- AUTO-INTERNAL-LINKS -->
+
+<aside class="related-calcs" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px 24px;margin:32px auto;max-width:1100px;font-family:'Inter',sans-serif">
+
+  <h3 style="font-size:0.95rem;color:#1e3a5f;margin:0 0 12px;font-weight:700">Calculadoras relacionadas de Taludes e Maci�os Rochosos</h3>
+
+  <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px 16px">
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora FS Talude ? Bishop Simplificado</a></li>
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Cunha Rochosa ? FS planar e falha em cunha</a></li>
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora Estabilidade de Aterros ? FS e altura cr�tica</a></li>
+
+      <li><a href="/" style="color:#0d9488;text-decoration:none;font-weight:500">Calculadora FS Talude Infinito ? Encostas Extensas</a></li>
+
+  </ul>
+
+  <p style="font-size:0.8rem;color:#64748b;margin:14px 0 0">
+
+    Mais ferramentas em <a href="/" style="color:#0d9488">Taludes e Maci�os Rochosos</a> � Voltar ao
+
+    <a href="/" style="color:#0d9488">�ndice de Geotecnia Brasil</a>
+
+  </p>
+
+</aside>
+
+</article>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<div>
+
+<h4>Geotecnia Brasil</h4>
+
+<p>Servi�os geot�cnicos profissionais (Brasil).</p>
+
+<p class="footer-designer-credit">Site projetado por equipe geot�cnica</p>
+
+</div>
+
+<div>
+
+<h4>Contato</h4>
+
+<p>Email: <a href="/cdn-cgi/l/email-protection#53303c3d2732273c1334363c2736303d3a32312132203a3f7d303c3e"><span class="__cf_email__" data-cfemail="72111d1c0613061d3215171d0617111c1b13100013011b1e5c111d1f">[email&#160;protected]</span></a></p>
+
+</div>
+
+<div>
+
+<h4>Servi�os</h4>
+
+<p><a href="/sondagem-spt/">Sondagem SPT</a><br><a href="/laboratorio-mecanica-solos/">Laborat�rio de Mec�nica dos Solos</a><br><a href="/estabilidade-taludes/">Estabilidade de Taludes</a><br><a href="/projeto-muros-contencao/">Projeto de Muros de Conten��o</a></p>
+
+</div>
+
+<div>
+
+<h4>Legal</h4>
+
+<p><a href="/sitemap.xml">Mapa do site</a></p>
+
+</div>
+
+<div class="copyr">� 2026 Geotecnia Brasil</div>
+
+</div>
+
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "In�cio", "item": "https://geotecniabrasil.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculadora UCS a partir de PLT (Is50) e BTS", "item": "https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/"}]}, {"@type": "Article", "headline": "Calculadora UCS a partir de PLT (Is50) e BTS", "inLanguage": "pt", "description": "A resist�ncia � compress�o uniaxial UCS � o par�metro chave da rocha intacta nos crit�rios de Hoek-Brown, projeto de t�neis, estabilidade de taludes e cara", "url": "https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/", "mainEntityOfPage": "https://geotecniabrasil.com/blog/calculadoras/ucs-plt-bts/", "publisher": {"@type": "Organization", "name": "Geotecnia Brasil", "url": "https://geotecniabrasil.com/"}}]}</script>
+
+</body>
+
 </html>
